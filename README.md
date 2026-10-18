@@ -1,5 +1,7 @@
 # mechatronikers – Drawing2CAD
 
+> This repository is for the judges: a snapshot of our team's private development repository, so issue and PR numbers (#…) refer to that repository.
+
 Blackforest Hackathon: SMART AUTOMATION, challenge **Drawing2CAD** (BCT Technology AG): an AI agent
 turns 2D technical drawings (vector PDF) into validated 3D CAD models (STEP). It builds geometry only
 through our local, offline CAD MCP server, validates every build, and flags every uncertain value
