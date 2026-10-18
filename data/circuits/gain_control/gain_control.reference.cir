@@ -1,0 +1,8 @@
+.title KiCad schematic
+.include "vca810.lib"
+V2 GND -5V DC 5 
+XU1 /in GND /gain /out +5V -5V GND VCA810
+V4 /gain GND PWL( 0 -1.2 10m -1.2 10.01m -1.6 20m -1.6 20.1m -2 100m -2 ) 
+V3 /in GND DC 0 SIN( 0 10m 1k 0 0 0 ) AC 1  
+V1 +5V GND DC 5 
+.end

@@ -1,0 +1,129 @@
+{
+ "tool": "Eeschema 10.0.1",
+ "components": [
+  {
+   "ref": "A1",
+   "value": "MULTIPLIER",
+   "lib": "XSPICE_BasicAnalog",
+   "part": "MULTIPLIER",
+   "fields": {
+    "Sim.Device": "SUBCKT",
+    "Sim.Pins": "1=in1 2=in2 3=out",
+    "Sim.Library": "mult.lib",
+    "Sim.Name": "mult"
+   }
+  },
+  {
+   "ref": "R1",
+   "value": "R",
+   "lib": "SPICE_Basic",
+   "part": "R",
+   "fields": {
+    "Sim.Device": "SPICE",
+    "Sim.Params": "type=\"R\" model=\"1k\" lib=\"\"",
+    "Sim.Pins": "1=1 2=2"
+   }
+  },
+  {
+   "ref": "V1",
+   "value": "VSIN",
+   "lib": "SPICE_Basic",
+   "part": "VSIN",
+   "fields": {
+    "Sim.Device": "V",
+    "Sim.Type": "SIN",
+    "Sim.Params": "dc=0 ampl=1 f=1k",
+    "Sim.Pins": "1=+ 2=-"
+   }
+  },
+  {
+   "ref": "V2",
+   "value": "VSIN",
+   "lib": "SPICE_Basic",
+   "part": "VSIN",
+   "fields": {
+    "Sim.Device": "V",
+    "Sim.Type": "SIN",
+    "Sim.Params": "dc=0 ampl=1 f=2k",
+    "Sim.Pins": "1=+ 2=-"
+   }
+  }
+ ],
+ "nets": [
+  {
+   "name": "/in1",
+   "nodes": [
+    {
+     "ref": "A1",
+     "pin": "1",
+     "function": null,
+     "type": "input"
+    },
+    {
+     "ref": "V2",
+     "pin": "1",
+     "function": null,
+     "type": "passive"
+    }
+   ]
+  },
+  {
+   "name": "/in2",
+   "nodes": [
+    {
+     "ref": "A1",
+     "pin": "2",
+     "function": null,
+     "type": "input"
+    },
+    {
+     "ref": "V1",
+     "pin": "1",
+     "function": null,
+     "type": "passive"
+    }
+   ]
+  },
+  {
+   "name": "/out",
+   "nodes": [
+    {
+     "ref": "A1",
+     "pin": "3",
+     "function": null,
+     "type": "output"
+    },
+    {
+     "ref": "R1",
+     "pin": "1",
+     "function": null,
+     "type": "passive"
+    }
+   ]
+  },
+  {
+   "name": "GND",
+   "nodes": [
+    {
+     "ref": "R1",
+     "pin": "2",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "V1",
+     "pin": "2",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "V2",
+     "pin": "2",
+     "function": null,
+     "type": "passive"
+    }
+   ]
+  }
+ ],
+ "source": "KiCad demos/simulation/analog-multiplier/a-multi.kicad_sch @ 4b68fa789b38"
+}

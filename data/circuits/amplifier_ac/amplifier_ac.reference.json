@@ -1,0 +1,555 @@
+{
+ "tool": "Eeschema 10.0.1",
+ "components": [
+  {
+   "ref": "C1",
+   "value": "1UF",
+   "lib": "Device",
+   "part": "C",
+   "fields": {}
+  },
+  {
+   "ref": "C2",
+   "value": "220pF",
+   "lib": "Device",
+   "part": "C",
+   "fields": {}
+  },
+  {
+   "ref": "C3",
+   "value": "10nF",
+   "lib": "Device",
+   "part": "C",
+   "fields": {}
+  },
+  {
+   "ref": "C4",
+   "value": "10nF",
+   "lib": "Device",
+   "part": "C",
+   "fields": {}
+  },
+  {
+   "ref": "L1",
+   "value": "100mH",
+   "lib": "Device",
+   "part": "L",
+   "fields": {}
+  },
+  {
+   "ref": "L2",
+   "value": "100mH",
+   "lib": "Device",
+   "part": "L",
+   "fields": {}
+  },
+  {
+   "ref": "Q1",
+   "value": "Q2N2222",
+   "lib": "Transistor_BJT",
+   "part": "Q_NPN_CBE",
+   "fields": {
+    "Sim.Library": "2n2222.model",
+    "Sim.Name": "Q2N2222",
+    "Sim.Device": "NPN",
+    "Sim.Type": "GUMMELPOON",
+    "Sim.Pins": "1=C 2=B 3=E"
+   }
+  },
+  {
+   "ref": "Q2",
+   "value": "Q2N2222",
+   "lib": "Transistor_BJT",
+   "part": "Q_NPN_CBE",
+   "fields": {
+    "Sim.Library": "2n2222.model",
+    "Sim.Name": "Q2N2222",
+    "Sim.Device": "NPN",
+    "Sim.Type": "GUMMELPOON",
+    "Sim.Pins": "1=C 2=B 3=E"
+   }
+  },
+  {
+   "ref": "Q3",
+   "value": "Q2N2222",
+   "lib": "Transistor_BJT",
+   "part": "Q_NPN_CBE",
+   "fields": {
+    "Sim.Library": "2n2222.model",
+    "Sim.Name": "Q2N2222",
+    "Sim.Device": "NPN",
+    "Sim.Type": "GUMMELPOON",
+    "Sim.Pins": "1=C 2=B 3=E"
+   }
+  },
+  {
+   "ref": "R1",
+   "value": "10",
+   "lib": "Device",
+   "part": "R",
+   "fields": {}
+  },
+  {
+   "ref": "R10",
+   "value": "470",
+   "lib": "Device",
+   "part": "R",
+   "fields": {}
+  },
+  {
+   "ref": "R11",
+   "value": "10K",
+   "lib": "Device",
+   "part": "R",
+   "fields": {}
+  },
+  {
+   "ref": "R12",
+   "value": "100",
+   "lib": "Device",
+   "part": "R",
+   "fields": {}
+  },
+  {
+   "ref": "R2",
+   "value": "22K",
+   "lib": "Device",
+   "part": "R",
+   "fields": {}
+  },
+  {
+   "ref": "R3",
+   "value": "22K",
+   "lib": "Device",
+   "part": "R",
+   "fields": {}
+  },
+  {
+   "ref": "R4",
+   "value": "1K",
+   "lib": "Device",
+   "part": "R",
+   "fields": {}
+  },
+  {
+   "ref": "R5",
+   "value": "1K",
+   "lib": "Device",
+   "part": "R",
+   "fields": {}
+  },
+  {
+   "ref": "R6",
+   "value": "22K",
+   "lib": "Device",
+   "part": "R",
+   "fields": {}
+  },
+  {
+   "ref": "R7",
+   "value": "22K",
+   "lib": "Device",
+   "part": "R",
+   "fields": {}
+  },
+  {
+   "ref": "R8",
+   "value": "2.2K",
+   "lib": "Device",
+   "part": "R",
+   "fields": {}
+  },
+  {
+   "ref": "R9",
+   "value": "10K",
+   "lib": "Device",
+   "part": "R",
+   "fields": {}
+  },
+  {
+   "ref": "V1",
+   "value": "VSIN",
+   "lib": "Simulation_SPICE",
+   "part": "VSIN",
+   "fields": {
+    "Sim.Pins": "1=+ 2=-",
+    "Sim.Params": "dc=0 ampl=1 f=1k ac=1",
+    "Sim.Type": "SIN",
+    "Sim.Device": "V"
+   }
+  },
+  {
+   "ref": "V3",
+   "value": "12V",
+   "lib": "Simulation_SPICE",
+   "part": "VDC",
+   "fields": {
+    "Sim.Pins": "1=+ 2=-",
+    "Sim.Type": "DC",
+    "Sim.Device": "V"
+   }
+  }
+ ],
+ "nets": [
+  {
+   "name": "+12V",
+   "nodes": [
+    {
+     "ref": "R1",
+     "pin": "1",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "R3",
+     "pin": "1",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "R4",
+     "pin": "1",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "R5",
+     "pin": "1",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "R6",
+     "pin": "1",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "V3",
+     "pin": "1",
+     "function": null,
+     "type": "passive"
+    }
+   ]
+  },
+  {
+   "name": "/VBASE",
+   "nodes": [
+    {
+     "ref": "C2",
+     "pin": "1",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "Q1",
+     "pin": "2",
+     "function": "B_2",
+     "type": "input"
+    },
+    {
+     "ref": "Q3",
+     "pin": "1",
+     "function": "C_1",
+     "type": "passive"
+    },
+    {
+     "ref": "R5",
+     "pin": "2",
+     "function": null,
+     "type": "passive"
+    }
+   ]
+  },
+  {
+   "name": "/VIN",
+   "nodes": [
+    {
+     "ref": "C1",
+     "pin": "1",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "Q2",
+     "pin": "2",
+     "function": "B_2",
+     "type": "input"
+    },
+    {
+     "ref": "R3",
+     "pin": "2",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "R9",
+     "pin": "1",
+     "function": null,
+     "type": "passive"
+    }
+   ]
+  },
+  {
+   "name": "GND",
+   "nodes": [
+    {
+     "ref": "C2",
+     "pin": "2",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "C3",
+     "pin": "2",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "R10",
+     "pin": "2",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "R11",
+     "pin": "2",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "R8",
+     "pin": "2",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "R9",
+     "pin": "2",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "V1",
+     "pin": "2",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "V3",
+     "pin": "2",
+     "function": null,
+     "type": "passive"
+    }
+   ]
+  },
+  {
+   "name": "Net-(C1-Pad2)",
+   "nodes": [
+    {
+     "ref": "C1",
+     "pin": "2",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "V1",
+     "pin": "1",
+     "function": null,
+     "type": "passive"
+    }
+   ]
+  },
+  {
+   "name": "Net-(C3-Pad1)",
+   "nodes": [
+    {
+     "ref": "C3",
+     "pin": "1",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "L2",
+     "pin": "2",
+     "function": "2_2",
+     "type": "passive"
+    },
+    {
+     "ref": "R7",
+     "pin": "1",
+     "function": null,
+     "type": "passive"
+    }
+   ]
+  },
+  {
+   "name": "Net-(C4-Pad2)",
+   "nodes": [
+    {
+     "ref": "C4",
+     "pin": "2",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "L1",
+     "pin": "1",
+     "function": "1_1",
+     "type": "passive"
+    },
+    {
+     "ref": "R1",
+     "pin": "2",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "R2",
+     "pin": "2",
+     "function": null,
+     "type": "passive"
+    }
+   ]
+  },
+  {
+   "name": "Net-(L2-Pad1)",
+   "nodes": [
+    {
+     "ref": "L2",
+     "pin": "1",
+     "function": "1_1",
+     "type": "passive"
+    },
+    {
+     "ref": "R12",
+     "pin": "1",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "R7",
+     "pin": "2",
+     "function": null,
+     "type": "passive"
+    }
+   ]
+  },
+  {
+   "name": "Net-(Q1-E)",
+   "nodes": [
+    {
+     "ref": "Q1",
+     "pin": "3",
+     "function": "E_3",
+     "type": "passive"
+    },
+    {
+     "ref": "R12",
+     "pin": "2",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "R8",
+     "pin": "1",
+     "function": null,
+     "type": "passive"
+    }
+   ]
+  },
+  {
+   "name": "Net-(Q2-C)",
+   "nodes": [
+    {
+     "ref": "Q2",
+     "pin": "1",
+     "function": "C_1",
+     "type": "passive"
+    },
+    {
+     "ref": "R4",
+     "pin": "2",
+     "function": null,
+     "type": "passive"
+    }
+   ]
+  },
+  {
+   "name": "Net-(Q2-E)",
+   "nodes": [
+    {
+     "ref": "Q2",
+     "pin": "3",
+     "function": "E_3",
+     "type": "passive"
+    },
+    {
+     "ref": "Q3",
+     "pin": "3",
+     "function": "E_3",
+     "type": "passive"
+    },
+    {
+     "ref": "R10",
+     "pin": "1",
+     "function": null,
+     "type": "passive"
+    }
+   ]
+  },
+  {
+   "name": "Net-(Q3-B)",
+   "nodes": [
+    {
+     "ref": "Q3",
+     "pin": "2",
+     "function": "B_2",
+     "type": "input"
+    },
+    {
+     "ref": "R11",
+     "pin": "1",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "R6",
+     "pin": "2",
+     "function": null,
+     "type": "passive"
+    }
+   ]
+  },
+  {
+   "name": "VOUT",
+   "nodes": [
+    {
+     "ref": "C4",
+     "pin": "1",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "L1",
+     "pin": "2",
+     "function": "2_2",
+     "type": "passive"
+    },
+    {
+     "ref": "Q1",
+     "pin": "1",
+     "function": "C_1",
+     "type": "passive"
+    },
+    {
+     "ref": "R2",
+     "pin": "1",
+     "function": null,
+     "type": "passive"
+    }
+   ]
+  }
+ ],
+ "source": "KiCad demos/simulation/amplifier-ac/amplifier-ac.kicad_sch @ 4b68fa789b38"
+}

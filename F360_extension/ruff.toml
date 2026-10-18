@@ -1,0 +1,11 @@
+# The Fusion 360 add-in (#118) runs in Fusion's embedded Python, not in our package. It follows the
+# root config (ruff format included) except for these rules, kept as its author wrote them so that
+# its behaviour stays unchanged:
+#   UP031   printf-style string formatting
+#   SIM105  try/except/pass around best-effort calls
+#   UP041   `socket.timeout` next to TimeoutError: they are the same only from Python 3.10 on
+#   N806    `EnumProc`, a ctypes callback type named like a class
+extend = "../pyproject.toml"
+
+[lint]
+ignore = ["UP031", "SIM105", "UP041", "N806"]

@@ -1,0 +1,67 @@
+# Hosted hub (docs/13, D72): Postgres 17 with a named volume, and the hub service (profile `hub`).
+#
+# Never move this to the repo root: the judges' build picks a root docker-compose.yml first (D77).
+#
+#   cp deploy/compose/.env.example deploy/compose/.env    # then set POSTGRES_PASSWORD
+#   docker compose -f deploy/compose/compose.yaml up -d   # or: podman compose …
+#   export MT_PG_DSN='postgresql://mechatronikers:<password>@127.0.0.1:5432/mechatronikers'
+#   (percent-encode % @ : / in the password, e.g. % as %25)
+#   uv run --extra hub python -m mechatronikers.pgstore migrate
+#
+# Postgres listens on 127.0.0.1 only. Data lives in the volume `pgdata`; `down -v` deletes it.
+#
+# Hub v0 (#74, read-only; profile `hub`): runs the review UI build and the hub API from the
+# session image (`python -m mechatronikers.session build-image`), on 127.0.0.1 only. Set
+# MT_HUB_SHARED_TOKEN and MT_HUB_WORKER_TOKENS in .env (python -m mechatronikers.hub token).
+# The session image has no `hub` extra, so this container keeps its events, run records and
+# artifacts in the volume `hubdata` (SQLite and a blob folder); a hub on the host with MT_PG_DSN
+# uses the Postgres service above instead (README "Run the hub").
+#
+#   docker compose -f deploy/compose/compose.yaml --profile hub up -d hub
+#   open http://127.0.0.1:8780/?t=$MT_HUB_SHARED_TOKEN
+name: mechatronikers-hub
+
+services:
+  postgres:
+    image: docker.io/library/postgres:17-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: mechatronikers
+      POSTGRES_USER: mechatronikers
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?set POSTGRES_PASSWORD in deploy/compose/.env}
+    ports:
+      - "127.0.0.1:${MT_PG_PORT:-5432}:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U \"$${POSTGRES_USER}\" -d \"$${POSTGRES_DB}\""]
+      interval: 5s
+      timeout: 3s
+      retries: 12
+      start_period: 10s
+
+  hub:
+    profiles: ["hub"]
+    image: ${MT_HUB_IMAGE:-localhost/mechatronikers:dev}
+    restart: unless-stopped
+    # /session is the image's writable folder; the volume starts as a copy of it (user 10001)
+    command: ["python", "-m", "mechatronikers.hub", "serve", "--host", "0.0.0.0", "--port", "8780",
+              "--data-dir", "/session/hub", "--require-tokens"]
+    environment:
+      MT_HUB_SHARED_TOKEN: ${MT_HUB_SHARED_TOKEN:-}
+      MT_HUB_WORKER_TOKENS: ${MT_HUB_WORKER_TOKENS:-}
+      MT_HUB_ORIGIN: ${MT_HUB_ORIGIN:-http://127.0.0.1:8780}
+    ports:
+      - "127.0.0.1:${MT_HUB_PORT:-8780}:8780"
+    volumes:
+      - hubdata:/session
+    # no Podman socket, no model keys, nothing to parse: the hub only stores and serves (docs/13)
+    read_only: true
+    tmpfs:
+      - /tmp
+    cap_drop: [ALL]
+    security_opt: ["no-new-privileges:true"]
+
+volumes:
+  pgdata:
+  hubdata:

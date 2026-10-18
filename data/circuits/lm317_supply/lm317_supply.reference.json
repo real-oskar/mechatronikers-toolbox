@@ -1,0 +1,378 @@
+{
+ "tool": "Eeschema 10.0.1",
+ "components": [
+  {
+   "ref": "C1",
+   "value": "2500u",
+   "lib": "Device",
+   "part": "C",
+   "fields": {}
+  },
+  {
+   "ref": "C2",
+   "value": "10u",
+   "lib": "Device",
+   "part": "C",
+   "fields": {}
+  },
+  {
+   "ref": "C3",
+   "value": "1u",
+   "lib": "Device",
+   "part": "C",
+   "fields": {}
+  },
+  {
+   "ref": "D1",
+   "value": "D_Bridge_+-AA",
+   "lib": "Device",
+   "part": "D_Bridge_+-AA",
+   "fields": {
+    "Sim.Library": "diode_bridge.lib",
+    "Sim.Name": "D_Bridge_+-AA",
+    "Sim.Pins": "1=1 2=2 3=3 4=4"
+   }
+  },
+  {
+   "ref": "D2",
+   "value": "1N4002",
+   "lib": "Diode",
+   "part": "1N4001",
+   "fields": {
+    "Sim.Library": "1N4002.lib",
+    "Sim.Name": "1N4002",
+    "Sim.Pins": "2=1 1=2"
+   }
+  },
+  {
+   "ref": "D3",
+   "value": "1N4002",
+   "lib": "Diode",
+   "part": "1N4001",
+   "fields": {
+    "Sim.Library": "1N4002.lib",
+    "Sim.Name": "1N4002",
+    "Sim.Pins": "2=1 1=2"
+   }
+  },
+  {
+   "ref": "R1",
+   "value": "1.5k",
+   "lib": "Device",
+   "part": "R",
+   "fields": {}
+  },
+  {
+   "ref": "R3",
+   "value": "1g",
+   "lib": "Device",
+   "part": "R",
+   "fields": {}
+  },
+  {
+   "ref": "R4",
+   "value": "240",
+   "lib": "Device",
+   "part": "R",
+   "fields": {}
+  },
+  {
+   "ref": "Rload1",
+   "value": "~",
+   "lib": "Device",
+   "part": "R",
+   "fields": {
+    "Sim.Device": "R",
+    "Sim.Pins": "1=+ 2=-",
+    "Sim.Params": "r='TIME > 350m ? 8 : 89'"
+   }
+  },
+  {
+   "ref": "Rmeas1",
+   "value": "1",
+   "lib": "Device",
+   "part": "R",
+   "fields": {}
+  },
+  {
+   "ref": "T1",
+   "value": "Transformer_1P_1S",
+   "lib": "Device",
+   "part": "Transformer_1P_1S",
+   "fields": {
+    "Sim.Library": "xformer.lib",
+    "Sim.Name": "XFORMER",
+    "Sim.Pins": "1=1 2=2 3=3 4=4"
+   }
+  },
+  {
+   "ref": "U1",
+   "value": "LM317_TO-220",
+   "lib": "Regulator_Linear",
+   "part": "LM317_TO-220",
+   "fields": {
+    "Sim.Library": "LM317.lib",
+    "Sim.Name": "LM317",
+    "Sim.Pins": "3=1 1=2 2=3"
+   }
+  },
+  {
+   "ref": "V1",
+   "value": "VSIN",
+   "lib": "Simulation_SPICE",
+   "part": "VSIN",
+   "fields": {
+    "Sim.Pins": "1=+ 2=-",
+    "Sim.Params": "dc=0 ampl=170 f=60 td=0 theta=0 phase=0 ac=170",
+    "Sim.Type": "SIN",
+    "Sim.Device": "V"
+   }
+  }
+ ],
+ "nets": [
+  {
+   "name": "/adj",
+   "nodes": [
+    {
+     "ref": "C2",
+     "pin": "1",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "D3",
+     "pin": "2",
+     "function": "A_2",
+     "type": "passive"
+    },
+    {
+     "ref": "R1",
+     "pin": "1",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "R4",
+     "pin": "2",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "U1",
+     "pin": "1",
+     "function": "ADJ_1",
+     "type": "input"
+    }
+   ]
+  },
+  {
+   "name": "/out",
+   "nodes": [
+    {
+     "ref": "C3",
+     "pin": "1",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "D2",
+     "pin": "2",
+     "function": "A_2",
+     "type": "passive"
+    },
+    {
+     "ref": "D3",
+     "pin": "1",
+     "function": "K_1",
+     "type": "passive"
+    },
+    {
+     "ref": "R4",
+     "pin": "1",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "Rmeas1",
+     "pin": "1",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "U1",
+     "pin": "2",
+     "function": "VO_2",
+     "type": "power_out"
+    }
+   ]
+  },
+  {
+   "name": "/rect",
+   "nodes": [
+    {
+     "ref": "C1",
+     "pin": "1",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "D1",
+     "pin": "1",
+     "function": "+_1",
+     "type": "passive"
+    },
+    {
+     "ref": "D2",
+     "pin": "1",
+     "function": "K_1",
+     "type": "passive"
+    },
+    {
+     "ref": "U1",
+     "pin": "3",
+     "function": "VI_3",
+     "type": "power_in"
+    }
+   ]
+  },
+  {
+   "name": "GND",
+   "nodes": [
+    {
+     "ref": "C1",
+     "pin": "2",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "C2",
+     "pin": "2",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "C3",
+     "pin": "2",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "D1",
+     "pin": "2",
+     "function": "-_2",
+     "type": "passive"
+    },
+    {
+     "ref": "R1",
+     "pin": "2",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "R3",
+     "pin": "2",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "Rload1",
+     "pin": "2",
+     "function": null,
+     "type": "passive"
+    }
+   ]
+  },
+  {
+   "name": "Net-(Rload1-Pad1)",
+   "nodes": [
+    {
+     "ref": "Rload1",
+     "pin": "1",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "Rmeas1",
+     "pin": "2",
+     "function": null,
+     "type": "passive"
+    }
+   ]
+  },
+  {
+   "name": "Net-(T1-AA)",
+   "nodes": [
+    {
+     "ref": "T1",
+     "pin": "1",
+     "function": "AA_1",
+     "type": "passive"
+    },
+    {
+     "ref": "V1",
+     "pin": "1",
+     "function": null,
+     "type": "passive"
+    }
+   ]
+  },
+  {
+   "name": "Net-(T1-AB)",
+   "nodes": [
+    {
+     "ref": "R3",
+     "pin": "1",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "T1",
+     "pin": "2",
+     "function": "AB_2",
+     "type": "passive"
+    },
+    {
+     "ref": "V1",
+     "pin": "2",
+     "function": null,
+     "type": "passive"
+    }
+   ]
+  },
+  {
+   "name": "Net-(T1-SA)",
+   "nodes": [
+    {
+     "ref": "D1",
+     "pin": "4",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "T1",
+     "pin": "3",
+     "function": "SA_3",
+     "type": "passive"
+    }
+   ]
+  },
+  {
+   "name": "Net-(T1-SB)",
+   "nodes": [
+    {
+     "ref": "D1",
+     "pin": "3",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "T1",
+     "pin": "4",
+     "function": "SB_4",
+     "type": "passive"
+    }
+   ]
+  }
+ ],
+ "source": "KiCad demos/simulation/power_supplies/LM317_power_supply/power_supply.kicad_sch @ 4b68fa789b38"
+}

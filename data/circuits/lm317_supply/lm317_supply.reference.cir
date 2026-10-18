@@ -1,0 +1,21 @@
+.title KiCad schematic
+.include "1N4002.lib"
+.include "LM317.lib"
+.include "diode_bridge.lib"
+.include "xformer.lib"
+.tran 1m 500m
+R4 /out /adj 240
+XU1 /rect /adj /out LM317
+D2 /out /rect 1N4002
+Rload1 Net-_Rload1-Pad1_ GND r='TIME > 350m ? 8 : 89'
+Rmeas1 /out Net-_Rload1-Pad1_ 1
+C3 /out GND 1u
+D3 /adj /out 1N4002
+C2 /adj GND 10u
+R1 /adj GND 1.5k
+C1 /rect GND 2500u
+XD1 /rect GND Net-_T1-SB_ Net-_T1-SA_ D_Bridge_+-AA
+V1 Net-_T1-AA_ Net-_T1-AB_ DC 0 SIN( 0 170 60 0 0 0 ) AC 170  
+XT1 Net-_T1-AA_ Net-_T1-AB_ Net-_T1-SA_ Net-_T1-SB_ XFORMER
+R3 Net-_T1-AB_ GND 1g
+.end

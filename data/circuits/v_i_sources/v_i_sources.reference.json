@@ -1,0 +1,869 @@
+{
+ "tool": "Eeschema 10.0.1",
+ "components": [
+  {
+   "ref": "I1",
+   "value": "IAM",
+   "lib": "v_i_sources",
+   "part": "IAM-Simulation_SPICE",
+   "fields": {
+    "Sim.Device": "SPICE",
+    "Sim.Params": "type=\"I\" model=\"am(0.5 1 10meg 50meg 20n)\" lib=\"\"",
+    "Sim.Pins": "1=1 2=2"
+   }
+  },
+  {
+   "ref": "I2",
+   "value": "2.345",
+   "lib": "v_i_sources",
+   "part": "IDC-Simulation_SPICE",
+   "fields": {
+    "Sim.Device": "I",
+    "Sim.Type": "DC",
+    "Sim.Pins": "1=+ 2=-"
+   }
+  },
+  {
+   "ref": "I3",
+   "value": "IEXP",
+   "lib": "v_i_sources",
+   "part": "IEXP-Simulation_SPICE",
+   "fields": {
+    "Sim.Device": "I",
+    "Sim.Type": "EXP",
+    "Sim.Params": "y1=-4 y2=-1 td1=2n tau1=30n td2=60n tau2=40n",
+    "Sim.Pins": "1=+ 2=-"
+   }
+  },
+  {
+   "ref": "I4",
+   "value": "IPULSE",
+   "lib": "v_i_sources",
+   "part": "IPULSE-Simulation_SPICE",
+   "fields": {
+    "Sim.Device": "I",
+    "Sim.Type": "PULSE",
+    "Sim.Params": "y1=-1 y2=1 td=2n tr=30n tf=2n tw=50n per=100n",
+    "Sim.Pins": "1=+ 2=-"
+   }
+  },
+  {
+   "ref": "I5",
+   "value": "IPWL",
+   "lib": "v_i_sources",
+   "part": "IPWL-Simulation_SPICE",
+   "fields": {
+    "Sim.Device": "SPICE",
+    "Sim.Params": "type=\"I\" model=\"pwl(0 -7 50n -7 51n -3 97n -4 171n -6.5 200n -6.5)\" lib=\"\"",
+    "Sim.Pins": "1=1 2=2"
+   }
+  },
+  {
+   "ref": "I6",
+   "value": "ISFFM",
+   "lib": "v_i_sources",
+   "part": "ISFFM-Simulation_SPICE",
+   "fields": {
+    "Sim.Device": "SPICE",
+    "Sim.Params": "type=\"I\" model=\"sffm(-5 1 100meg 5 10meg)\" lib=\"\"",
+    "Sim.Pins": "1=1 2=2"
+   }
+  },
+  {
+   "ref": "I7",
+   "value": "ISIN",
+   "lib": "v_i_sources",
+   "part": "ISIN-Simulation_SPICE",
+   "fields": {
+    "Sim.Device": "I",
+    "Sim.Type": "SIN",
+    "Sim.Params": "dc=0 ampl=1 f=100M td=1n theta=10G",
+    "Sim.Pins": "1=+ 2=-"
+   }
+  },
+  {
+   "ref": "I8",
+   "value": "ITRNOISE",
+   "lib": "v_i_sources",
+   "part": "ITRNOISE-Simulation_SPICE",
+   "fields": {
+    "Sim.Device": "I",
+    "Sim.Type": "WHITENOISE",
+    "Sim.Params": "rms=100m dt=500p ac=0 ph=0",
+    "Sim.Pins": "1=+ 2=-"
+   }
+  },
+  {
+   "ref": "I9",
+   "value": "ITRRANDOM",
+   "lib": "v_i_sources",
+   "part": "ITRRANDOM-Simulation_SPICE",
+   "fields": {
+    "Sim.Device": "I",
+    "Sim.Type": "RANDUNIFORM",
+    "Sim.Params": "ts=100ns td=10ns range=1",
+    "Sim.Pins": "1=+ 2=-"
+   }
+  },
+  {
+   "ref": "R1",
+   "value": "10k",
+   "lib": "v_i_sources",
+   "part": "R-Device",
+   "fields": {}
+  },
+  {
+   "ref": "R10",
+   "value": "10k",
+   "lib": "v_i_sources",
+   "part": "R-Device",
+   "fields": {}
+  },
+  {
+   "ref": "R11",
+   "value": "10k",
+   "lib": "v_i_sources",
+   "part": "R-Device",
+   "fields": {}
+  },
+  {
+   "ref": "R12",
+   "value": "10k",
+   "lib": "v_i_sources",
+   "part": "R-Device",
+   "fields": {}
+  },
+  {
+   "ref": "R13",
+   "value": "10k",
+   "lib": "v_i_sources",
+   "part": "R-Device",
+   "fields": {}
+  },
+  {
+   "ref": "R14",
+   "value": "10k",
+   "lib": "v_i_sources",
+   "part": "R-Device",
+   "fields": {}
+  },
+  {
+   "ref": "R15",
+   "value": "10k",
+   "lib": "v_i_sources",
+   "part": "R-Device",
+   "fields": {}
+  },
+  {
+   "ref": "R16",
+   "value": "10k",
+   "lib": "v_i_sources",
+   "part": "R-Device",
+   "fields": {}
+  },
+  {
+   "ref": "R17",
+   "value": "10k",
+   "lib": "v_i_sources",
+   "part": "R-Device",
+   "fields": {}
+  },
+  {
+   "ref": "R18",
+   "value": "10k",
+   "lib": "v_i_sources",
+   "part": "R-Device",
+   "fields": {}
+  },
+  {
+   "ref": "R2",
+   "value": "10k",
+   "lib": "v_i_sources",
+   "part": "R-Device",
+   "fields": {}
+  },
+  {
+   "ref": "R3",
+   "value": "10k",
+   "lib": "v_i_sources",
+   "part": "R-Device",
+   "fields": {}
+  },
+  {
+   "ref": "R4",
+   "value": "10k",
+   "lib": "v_i_sources",
+   "part": "R-Device",
+   "fields": {}
+  },
+  {
+   "ref": "R5",
+   "value": "10k",
+   "lib": "v_i_sources",
+   "part": "R-Device",
+   "fields": {}
+  },
+  {
+   "ref": "R6",
+   "value": "10k",
+   "lib": "v_i_sources",
+   "part": "R-Device",
+   "fields": {}
+  },
+  {
+   "ref": "R7",
+   "value": "10k",
+   "lib": "v_i_sources",
+   "part": "R-Device",
+   "fields": {}
+  },
+  {
+   "ref": "R8",
+   "value": "10k",
+   "lib": "v_i_sources",
+   "part": "R-Device",
+   "fields": {}
+  },
+  {
+   "ref": "R9",
+   "value": "10k",
+   "lib": "v_i_sources",
+   "part": "R-Device",
+   "fields": {}
+  },
+  {
+   "ref": "V1",
+   "value": "VAM",
+   "lib": "v_i_sources",
+   "part": "VAM-Simulation_SPICE",
+   "fields": {
+    "Sim.Device": "SPICE",
+    "Sim.Params": "type=\"V\" model=\"am(0.5 1 10meg 50meg 20n)\" lib=\"\"",
+    "Sim.Pins": "1=1 2=2"
+   }
+  },
+  {
+   "ref": "V2",
+   "value": "2.345",
+   "lib": "v_i_sources",
+   "part": "VDC-Simulation_SPICE",
+   "fields": {
+    "Sim.Device": "V",
+    "Sim.Type": "DC",
+    "Sim.Pins": "1=+ 2=-"
+   }
+  },
+  {
+   "ref": "V3",
+   "value": "VEXP",
+   "lib": "v_i_sources",
+   "part": "VEXP-Simulation_SPICE",
+   "fields": {
+    "Sim.Device": "V",
+    "Sim.Type": "EXP",
+    "Sim.Params": "y1=-4 y2=-1 td1=2n tau1=30n td2=60n tau2=40n",
+    "Sim.Pins": "1=+ 2=-"
+   }
+  },
+  {
+   "ref": "V4",
+   "value": "VPULSE",
+   "lib": "v_i_sources",
+   "part": "VPULSE-Simulation_SPICE",
+   "fields": {
+    "Sim.Device": "V",
+    "Sim.Type": "PULSE",
+    "Sim.Params": "y1=-1 y2=1 td=2n tr=30n tf=2n tw=50n per=100n",
+    "Sim.Pins": "1=+ 2=-"
+   }
+  },
+  {
+   "ref": "V5",
+   "value": "VPWL",
+   "lib": "v_i_sources",
+   "part": "VPWL-Simulation_SPICE",
+   "fields": {
+    "Sim.Device": "SPICE",
+    "Sim.Params": "type=\"V\" model=\"pwl(0 -7 50n -7 51n -3 97n -4 171n -6.5 200n -6.5)\" lib=\"\"",
+    "Sim.Pins": "1=1 2=2"
+   }
+  },
+  {
+   "ref": "V6",
+   "value": "VSFFM",
+   "lib": "v_i_sources",
+   "part": "VSFFM-Simulation_SPICE",
+   "fields": {
+    "Sim.Device": "SPICE",
+    "Sim.Params": "type=\"V\" model=\"sffm(-5 1 100meg 5 10meg)\" lib=\"\"",
+    "Sim.Pins": "1=1 2=2"
+   }
+  },
+  {
+   "ref": "V7",
+   "value": "VSIN",
+   "lib": "v_i_sources",
+   "part": "VSIN-Simulation_SPICE",
+   "fields": {
+    "Sim.Device": "V",
+    "Sim.Type": "SIN",
+    "Sim.Params": "dc=0 ampl=1 f=100M td=1n theta=10G",
+    "Sim.Pins": "1=+ 2=-"
+   }
+  },
+  {
+   "ref": "V8",
+   "value": "VTRNOISE",
+   "lib": "v_i_sources",
+   "part": "VTRNOISE-Simulation_SPICE",
+   "fields": {
+    "Sim.Device": "V",
+    "Sim.Type": "WHITENOISE",
+    "Sim.Params": "rms=100m dt=500p ac=0 ph=0",
+    "Sim.Pins": "1=+ 2=-"
+   }
+  },
+  {
+   "ref": "V9",
+   "value": "VTRRANDOM",
+   "lib": "v_i_sources",
+   "part": "VTRRANDOM-Simulation_SPICE",
+   "fields": {
+    "Sim.Device": "V",
+    "Sim.Type": "RANDUNIFORM",
+    "Sim.Params": "ts=100ns td=10ns range=2 offset=0",
+    "Sim.Pins": "1=+ 2=-"
+   }
+  }
+ ],
+ "nets": [
+  {
+   "name": "/iam",
+   "nodes": [
+    {
+     "ref": "I1",
+     "pin": "1",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "R10",
+     "pin": "1",
+     "function": null,
+     "type": "passive"
+    }
+   ]
+  },
+  {
+   "name": "/idc",
+   "nodes": [
+    {
+     "ref": "I2",
+     "pin": "1",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "R11",
+     "pin": "1",
+     "function": null,
+     "type": "passive"
+    }
+   ]
+  },
+  {
+   "name": "/iexp",
+   "nodes": [
+    {
+     "ref": "I3",
+     "pin": "1",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "R12",
+     "pin": "1",
+     "function": null,
+     "type": "passive"
+    }
+   ]
+  },
+  {
+   "name": "/ipulse",
+   "nodes": [
+    {
+     "ref": "I4",
+     "pin": "1",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "R13",
+     "pin": "1",
+     "function": null,
+     "type": "passive"
+    }
+   ]
+  },
+  {
+   "name": "/ipwl",
+   "nodes": [
+    {
+     "ref": "I5",
+     "pin": "1",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "R14",
+     "pin": "1",
+     "function": null,
+     "type": "passive"
+    }
+   ]
+  },
+  {
+   "name": "/isffm",
+   "nodes": [
+    {
+     "ref": "I6",
+     "pin": "1",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "R15",
+     "pin": "1",
+     "function": null,
+     "type": "passive"
+    }
+   ]
+  },
+  {
+   "name": "/isin",
+   "nodes": [
+    {
+     "ref": "I7",
+     "pin": "1",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "R16",
+     "pin": "1",
+     "function": null,
+     "type": "passive"
+    }
+   ]
+  },
+  {
+   "name": "/itrnoise",
+   "nodes": [
+    {
+     "ref": "I8",
+     "pin": "1",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "R17",
+     "pin": "1",
+     "function": null,
+     "type": "passive"
+    }
+   ]
+  },
+  {
+   "name": "/itrrandom",
+   "nodes": [
+    {
+     "ref": "I9",
+     "pin": "1",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "R18",
+     "pin": "1",
+     "function": null,
+     "type": "passive"
+    }
+   ]
+  },
+  {
+   "name": "/vam",
+   "nodes": [
+    {
+     "ref": "R1",
+     "pin": "1",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "V1",
+     "pin": "1",
+     "function": null,
+     "type": "passive"
+    }
+   ]
+  },
+  {
+   "name": "/vdc",
+   "nodes": [
+    {
+     "ref": "R2",
+     "pin": "1",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "V2",
+     "pin": "1",
+     "function": null,
+     "type": "passive"
+    }
+   ]
+  },
+  {
+   "name": "/vexp",
+   "nodes": [
+    {
+     "ref": "R3",
+     "pin": "1",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "V3",
+     "pin": "1",
+     "function": null,
+     "type": "passive"
+    }
+   ]
+  },
+  {
+   "name": "/vpulse",
+   "nodes": [
+    {
+     "ref": "R4",
+     "pin": "1",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "V4",
+     "pin": "1",
+     "function": null,
+     "type": "passive"
+    }
+   ]
+  },
+  {
+   "name": "/vpwl",
+   "nodes": [
+    {
+     "ref": "R5",
+     "pin": "1",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "V5",
+     "pin": "1",
+     "function": null,
+     "type": "passive"
+    }
+   ]
+  },
+  {
+   "name": "/vsffm",
+   "nodes": [
+    {
+     "ref": "R6",
+     "pin": "1",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "V6",
+     "pin": "1",
+     "function": null,
+     "type": "passive"
+    }
+   ]
+  },
+  {
+   "name": "/vsin",
+   "nodes": [
+    {
+     "ref": "R7",
+     "pin": "1",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "V7",
+     "pin": "1",
+     "function": null,
+     "type": "passive"
+    }
+   ]
+  },
+  {
+   "name": "/vtrnoise",
+   "nodes": [
+    {
+     "ref": "R8",
+     "pin": "1",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "V8",
+     "pin": "1",
+     "function": null,
+     "type": "passive"
+    }
+   ]
+  },
+  {
+   "name": "/vtrrandom",
+   "nodes": [
+    {
+     "ref": "R9",
+     "pin": "1",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "V9",
+     "pin": "1",
+     "function": null,
+     "type": "passive"
+    }
+   ]
+  },
+  {
+   "name": "GND",
+   "nodes": [
+    {
+     "ref": "I1",
+     "pin": "2",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "I2",
+     "pin": "2",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "I3",
+     "pin": "2",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "I4",
+     "pin": "2",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "I5",
+     "pin": "2",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "I6",
+     "pin": "2",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "I7",
+     "pin": "2",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "I8",
+     "pin": "2",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "I9",
+     "pin": "2",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "R1",
+     "pin": "2",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "R10",
+     "pin": "2",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "R11",
+     "pin": "2",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "R12",
+     "pin": "2",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "R13",
+     "pin": "2",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "R14",
+     "pin": "2",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "R15",
+     "pin": "2",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "R16",
+     "pin": "2",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "R17",
+     "pin": "2",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "R18",
+     "pin": "2",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "R2",
+     "pin": "2",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "R3",
+     "pin": "2",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "R4",
+     "pin": "2",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "R5",
+     "pin": "2",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "R6",
+     "pin": "2",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "R7",
+     "pin": "2",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "R8",
+     "pin": "2",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "R9",
+     "pin": "2",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "V1",
+     "pin": "2",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "V2",
+     "pin": "2",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "V3",
+     "pin": "2",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "V4",
+     "pin": "2",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "V5",
+     "pin": "2",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "V6",
+     "pin": "2",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "V7",
+     "pin": "2",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "V8",
+     "pin": "2",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "V9",
+     "pin": "2",
+     "function": null,
+     "type": "passive"
+    }
+   ]
+  }
+ ],
+ "source": "KiCad demos/simulation/v_i_sources/v_i_sources.kicad_sch @ 4b68fa789b38"
+}

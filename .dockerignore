@@ -1,0 +1,25 @@
+# Build context for both images (Docker reads this file; Podman falls back to it because there is
+# no .containerignore):
+#   Dockerfile                        root build: CI checks + runnable service image (D77)
+#   deploy/containers/Containerfile   session sandbox image (`session build-image`)
+# Both copy explicit paths only. tests/ and data/ (sample parts with reference models) stay in the
+# context for the root build's check stage; neither the runtime nor the sandbox image contains them.
+.git
+.venv
+# keys: at any depth (Vite would inline VITE_* values from frontend/.env* into the bundle)
+**/.env
+**/.env.*
+.mypy_cache
+.pytest_cache
+.ruff_cache
+.coverage
+htmlcov
+docs
+.memes
+var
+out
+**/__pycache__
+frontend/node_modules
+frontend/dist
+frontend/coverage
+frontend/.dev-data

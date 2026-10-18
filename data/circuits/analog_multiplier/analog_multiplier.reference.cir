@@ -1,0 +1,9 @@
+.title KiCad schematic
+.include "mult.lib"
+.tran 1u 10m
+
+XA1 /in1 /in2 /out mult
+R1 /out GND 1k
+V2 /in1 GND DC 0 SIN( 0 1 2k ) 
+V1 /in2 GND DC 0 SIN( 0 1 1k ) 
+.end

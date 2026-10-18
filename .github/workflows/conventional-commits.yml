@@ -1,0 +1,35 @@
+name: Conventional Commits
+
+# Manual only (2026-10-17): the private repo's Actions minutes are used up and will not be
+# topped up, so nothing runs automatically. Merges are gated by a local build of the root
+# Dockerfile (AGENTS.md). To restore, put back the triggers in the comment below.
+# on:
+#   pull_request:
+#     types: [opened, edited, synchronize, reopened]
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pull-requests: read
+
+jobs:
+  pr-title:
+    name: PR title
+    runs-on: ubuntu-latest
+    steps:
+      # PRs are squash-merged, so the PR title becomes the commit on main.
+      - uses: amannn/action-semantic-pull-request@v5
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  commits:
+    name: Commit messages
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: wagoid/commitlint-github-action@v6
+        with:
+          configFile: .commitlintrc.json

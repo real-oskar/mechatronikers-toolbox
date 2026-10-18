@@ -1,0 +1,2115 @@
+{
+ "tool": "Eeschema 10.0.1",
+ "components": [
+  {
+   "ref": "C1",
+   "value": "470p",
+   "lib": "Device",
+   "part": "C",
+   "fields": {}
+  },
+  {
+   "ref": "C10",
+   "value": "47pF",
+   "lib": "Device",
+   "part": "C",
+   "fields": {}
+  },
+  {
+   "ref": "C11",
+   "value": "100nF",
+   "lib": "Device",
+   "part": "C",
+   "fields": {
+    "Sim.Device": "SPICE",
+    "Sim.Params": "type=\"C\" model=\"100n\" lib=\"\"",
+    "Sim.Pins": "1=1 2=2"
+   }
+  },
+  {
+   "ref": "C12",
+   "value": "100nF",
+   "lib": "Device",
+   "part": "C",
+   "fields": {
+    "Sim.Device": "SPICE",
+    "Sim.Params": "type=\"C\" model=\"100n\" lib=\"\"",
+    "Sim.Pins": "1=1 2=2"
+   }
+  },
+  {
+   "ref": "C13",
+   "value": "4.7uF;63V",
+   "lib": "Device",
+   "part": "C_Polarized",
+   "fields": {}
+  },
+  {
+   "ref": "C14",
+   "value": "4.7uF;63V",
+   "lib": "Device",
+   "part": "C_Polarized",
+   "fields": {}
+  },
+  {
+   "ref": "C15",
+   "value": "2200uF;63V",
+   "lib": "Device",
+   "part": "C_Polarized",
+   "fields": {}
+  },
+  {
+   "ref": "C16",
+   "value": "2200uF;63V",
+   "lib": "Device",
+   "part": "C_Polarized",
+   "fields": {}
+  },
+  {
+   "ref": "C17",
+   "value": "100nF",
+   "lib": "Device",
+   "part": "C",
+   "fields": {}
+  },
+  {
+   "ref": "C18",
+   "value": "100nF",
+   "lib": "Device",
+   "part": "C",
+   "fields": {
+    "Sim.Device": "SPICE",
+    "Sim.Params": "type=\"C\" model=\"100n\" lib=\"\"",
+    "Sim.Pins": "1=1 2=2"
+   }
+  },
+  {
+   "ref": "C19",
+   "value": "100nF",
+   "lib": "Device",
+   "part": "C",
+   "fields": {
+    "Sim.Device": "SPICE",
+    "Sim.Params": "type=\"C\" model=\"100n\" lib=\"\"",
+    "Sim.Pins": "1=1 2=2"
+   }
+  },
+  {
+   "ref": "C2",
+   "value": "100uF;16V",
+   "lib": "Device",
+   "part": "C_Polarized",
+   "fields": {}
+  },
+  {
+   "ref": "C20",
+   "value": "2200uF;63V",
+   "lib": "Device",
+   "part": "C_Polarized",
+   "fields": {}
+  },
+  {
+   "ref": "C21",
+   "value": "2200uF;63V",
+   "lib": "Device",
+   "part": "C_Polarized",
+   "fields": {}
+  },
+  {
+   "ref": "C3",
+   "value": "100uF;25V",
+   "lib": "Device",
+   "part": "C_Polarized",
+   "fields": {}
+  },
+  {
+   "ref": "C4",
+   "value": "100nF",
+   "lib": "Device",
+   "part": "C",
+   "fields": {
+    "Sim.Device": "SPICE",
+    "Sim.Params": "type=\"C\" model=\"100n\" lib=\"\"",
+    "Sim.Pins": "1=1 2=2"
+   }
+  },
+  {
+   "ref": "C5",
+   "value": "100nF",
+   "lib": "Device",
+   "part": "C",
+   "fields": {
+    "Sim.Device": "SPICE",
+    "Sim.Params": "type=\"C\" model=\"100n\" lib=\"\"",
+    "Sim.Pins": "1=1 2=2"
+   }
+  },
+  {
+   "ref": "C6",
+   "value": "100uF;16V",
+   "lib": "Device",
+   "part": "C_Polarized",
+   "fields": {}
+  },
+  {
+   "ref": "C7",
+   "value": "1uF",
+   "lib": "Device",
+   "part": "C",
+   "fields": {}
+  },
+  {
+   "ref": "C8",
+   "value": "100nF",
+   "lib": "Device",
+   "part": "C",
+   "fields": {
+    "Sim.Device": "SPICE",
+    "Sim.Params": "type=\"C\" model=\"100n\" lib=\"\"",
+    "Sim.Pins": "1=1 2=2"
+   }
+  },
+  {
+   "ref": "C9",
+   "value": "100nF",
+   "lib": "Device",
+   "part": "C",
+   "fields": {
+    "Sim.Device": "SPICE",
+    "Sim.Params": "type=\"C\" model=\"100n\" lib=\"\"",
+    "Sim.Pins": "1=1 2=2"
+   }
+  },
+  {
+   "ref": "D1",
+   "value": "RED 2V",
+   "lib": "Device",
+   "part": "LED",
+   "fields": {
+    "Sim.Library": "all_devices.lib",
+    "Sim.Name": "LED1",
+    "Sim.Pins": "2=1 1=2"
+   }
+  },
+  {
+   "ref": "D2",
+   "value": "1N5248B",
+   "lib": "",
+   "part": "D_Zener_1",
+   "fields": {
+    "Sim.Library": "all_devices.lib",
+    "Sim.Name": "D1N5248/TEMP",
+    "Sim.Pins": "2=1 1=2"
+   }
+  },
+  {
+   "ref": "D3",
+   "value": "1N5248B",
+   "lib": "Device",
+   "part": "D_Zener",
+   "fields": {
+    "Sim.Library": "all_devices.lib",
+    "Sim.Name": "D1N5248/TEMP",
+    "Sim.Pins": "2=1 1=2"
+   }
+  },
+  {
+   "ref": "D4",
+   "value": "RED 2V",
+   "lib": "",
+   "part": "LED_1",
+   "fields": {
+    "Sim.Library": "all_devices.lib",
+    "Sim.Name": "LED1",
+    "Sim.Pins": "2=1 1=2"
+   }
+  },
+  {
+   "ref": "D5",
+   "value": "1N5245B",
+   "lib": "",
+   "part": "D_Zener_3",
+   "fields": {
+    "Sim.Library": "all_devices.lib",
+    "Sim.Name": "D1N5245/TEMP",
+    "Sim.Pins": "2=1 1=2"
+   }
+  },
+  {
+   "ref": "D6",
+   "value": "1N5245B",
+   "lib": "",
+   "part": "D_Zener_2",
+   "fields": {
+    "Sim.Library": "all_devices.lib",
+    "Sim.Name": "D1N5245/TEMP",
+    "Sim.Pins": "2=1 1=2"
+   }
+  },
+  {
+   "ref": "H1",
+   "value": "MountingHole",
+   "lib": "Mechanical",
+   "part": "MountingHole",
+   "fields": {}
+  },
+  {
+   "ref": "J1",
+   "value": "Input",
+   "lib": "Connector",
+   "part": "Screw_Terminal_01x02",
+   "fields": {}
+  },
+  {
+   "ref": "J2",
+   "value": "Screw_Terminal_01x02",
+   "lib": "",
+   "part": "Connector:Screw_Terminal_01x02_1",
+   "fields": {}
+  },
+  {
+   "ref": "J3",
+   "value": "Screw_Terminal_01x03",
+   "lib": "Connector",
+   "part": "Screw_Terminal_01x03",
+   "fields": {}
+  },
+  {
+   "ref": "L1",
+   "value": "1.2u",
+   "lib": "Device",
+   "part": "L",
+   "fields": {}
+  },
+  {
+   "ref": "Q1",
+   "value": "IRF610",
+   "lib": "Device",
+   "part": "Q_NMOS_GDS",
+   "fields": {
+    "Sim.Library": "all_devices.lib",
+    "Sim.Name": "IRF610h",
+    "Sim.Pins": "2=1 1=2 3=3"
+   }
+  },
+  {
+   "ref": "Q10",
+   "value": "2SA970",
+   "lib": "Device",
+   "part": "Q_PNP_ECB",
+   "fields": {
+    "Sim.Library": "all_devices.lib",
+    "Sim.Name": "QSA970",
+    "Sim.Pins": "2=1 3=2 1=3"
+   }
+  },
+  {
+   "ref": "Q11",
+   "value": "BS250",
+   "lib": "Transistor_FET",
+   "part": "BS250",
+   "fields": {
+    "Sim.Library": "all_devices.lib",
+    "Sim.Name": "BS250P",
+    "Sim.Pins": "1=3 2=4 3=5"
+   }
+  },
+  {
+   "ref": "Q12",
+   "value": "2SC2240 / AC181",
+   "lib": "Device",
+   "part": "Q_NPN_ECB",
+   "fields": {
+    "Sim.Library": "all_devices.lib",
+    "Sim.Name": "Q2SC2240",
+    "Sim.Pins": "2=1 3=2 1=3"
+   }
+  },
+  {
+   "ref": "Q13",
+   "value": "IRF610",
+   "lib": "Device",
+   "part": "Q_NMOS_GDS",
+   "fields": {
+    "Sim.Library": "all_devices.lib",
+    "Sim.Name": "IRF610h",
+    "Sim.Pins": "2=1 1=2 3=3"
+   }
+  },
+  {
+   "ref": "Q14",
+   "value": "IRF9610",
+   "lib": "Device",
+   "part": "Q_PMOS_GDS",
+   "fields": {
+    "Sim.Library": "all_devices.lib",
+    "Sim.Name": "IRF9610h",
+    "Sim.Pins": "2=1 1=2 3=3"
+   }
+  },
+  {
+   "ref": "Q15",
+   "value": "FQA46N15",
+   "lib": "Device",
+   "part": "Q_NMOS_GDS",
+   "fields": {
+    "Sim.Library": "all_devices.lib",
+    "Sim.Name": "FQA46N15",
+    "Sim.Pins": "2=1 1=2 3=3"
+   }
+  },
+  {
+   "ref": "Q16",
+   "value": "FQA36P15",
+   "lib": "Device",
+   "part": "Q_PMOS_GDS",
+   "fields": {
+    "Sim.Library": "all_devices.lib",
+    "Sim.Name": "FQA36P15",
+    "Sim.Pins": "2=1 1=2 3=3"
+   }
+  },
+  {
+   "ref": "Q2",
+   "value": "2SA970",
+   "lib": "Device",
+   "part": "Q_PNP_ECB",
+   "fields": {
+    "Sim.Library": "all_devices.lib",
+    "Sim.Name": "QSA970",
+    "Sim.Pins": "2=1 3=2 1=3"
+   }
+  },
+  {
+   "ref": "Q3",
+   "value": "2SC2240",
+   "lib": "Device",
+   "part": "Q_NPN_ECB",
+   "fields": {
+    "Sim.Library": "all_devices.lib",
+    "Sim.Name": "Q2SC2240",
+    "Sim.Pins": "2=1 3=2 1=3"
+   }
+  },
+  {
+   "ref": "Q4",
+   "value": "IRF9610",
+   "lib": "Device",
+   "part": "Q_PMOS_GDS",
+   "fields": {
+    "Sim.Library": "all_devices.lib",
+    "Sim.Name": "IRF9610h",
+    "Sim.Pins": "2=1 1=2 3=3"
+   }
+  },
+  {
+   "ref": "Q5",
+   "value": "FQP3P20",
+   "lib": "Device",
+   "part": "Q_PMOS_GDS",
+   "fields": {
+    "Sim.Library": "all_devices.lib",
+    "Sim.Name": "FQP3P20",
+    "Sim.Pins": "2=1 1=2 3=3"
+   }
+  },
+  {
+   "ref": "Q6",
+   "value": "FQP3N30",
+   "lib": "Device",
+   "part": "Q_NMOS_GDS",
+   "fields": {
+    "Sim.Library": "all_devices.lib",
+    "Sim.Name": "FQP3N30",
+    "Sim.Pins": "1=1 2=2 3=3",
+    "Sim.Device": "SUBCKT"
+   }
+  },
+  {
+   "ref": "Q7",
+   "value": "2SC2240",
+   "lib": "Device",
+   "part": "Q_NPN_ECB",
+   "fields": {
+    "Sim.Library": "all_devices.lib",
+    "Sim.Name": "Q2SC2240",
+    "Sim.Pins": "2=1 3=2 1=3"
+   }
+  },
+  {
+   "ref": "Q8",
+   "value": "2N7000",
+   "lib": "Transistor_FET",
+   "part": "2N7000",
+   "fields": {
+    "Sim.Library": "all_devices.lib",
+    "Sim.Name": "2N7000_ZX",
+    "Sim.Pins": "1=5 2=4 3=3",
+    "Sim.Device": "SUBCKT"
+   }
+  },
+  {
+   "ref": "Q9",
+   "value": "BS250",
+   "lib": "Transistor_FET",
+   "part": "BS250",
+   "fields": {
+    "Sim.Library": "all_devices.lib",
+    "Sim.Name": "BS250P",
+    "Sim.Pins": "1=3 2=4 3=5",
+    "Sim.Device": "SUBCKT"
+   }
+  },
+  {
+   "ref": "R1",
+   "value": "2k7",
+   "lib": "Device",
+   "part": "R",
+   "fields": {}
+  },
+  {
+   "ref": "R10",
+   "value": "10R",
+   "lib": "Device",
+   "part": "R",
+   "fields": {}
+  },
+  {
+   "ref": "R11",
+   "value": "47R;1W",
+   "lib": "Device",
+   "part": "R",
+   "fields": {}
+  },
+  {
+   "ref": "R12",
+   "value": "47R;1W",
+   "lib": "Device",
+   "part": "R",
+   "fields": {}
+  },
+  {
+   "ref": "R13",
+   "value": "10R",
+   "lib": "Device",
+   "part": "R",
+   "fields": {}
+  },
+  {
+   "ref": "R14",
+   "value": "330R",
+   "lib": "Device",
+   "part": "R",
+   "fields": {}
+  },
+  {
+   "ref": "R15",
+   "value": "330R",
+   "lib": "Device",
+   "part": "R",
+   "fields": {}
+  },
+  {
+   "ref": "R16",
+   "value": "22k",
+   "lib": "Device",
+   "part": "R",
+   "fields": {}
+  },
+  {
+   "ref": "R17",
+   "value": "3k3",
+   "lib": "Device",
+   "part": "R",
+   "fields": {}
+  },
+  {
+   "ref": "R18",
+   "value": "22k",
+   "lib": "Device",
+   "part": "R",
+   "fields": {}
+  },
+  {
+   "ref": "R19",
+   "value": "330",
+   "lib": "Device",
+   "part": "R",
+   "fields": {}
+  },
+  {
+   "ref": "R2",
+   "value": "5k6;1W",
+   "lib": "Device",
+   "part": "R",
+   "fields": {}
+  },
+  {
+   "ref": "R20",
+   "value": "330",
+   "lib": "Device",
+   "part": "R",
+   "fields": {}
+  },
+  {
+   "ref": "R21",
+   "value": "5k6;1W",
+   "lib": "Device",
+   "part": "R",
+   "fields": {}
+  },
+  {
+   "ref": "R23",
+   "value": "10K",
+   "lib": "Device",
+   "part": "R",
+   "fields": {}
+  },
+  {
+   "ref": "R24",
+   "value": "10k",
+   "lib": "Device",
+   "part": "R",
+   "fields": {}
+  },
+  {
+   "ref": "R25",
+   "value": "7k5",
+   "lib": "Device",
+   "part": "R",
+   "fields": {}
+  },
+  {
+   "ref": "R26",
+   "value": "22;1W",
+   "lib": "Device",
+   "part": "R",
+   "fields": {}
+  },
+  {
+   "ref": "R27",
+   "value": "560;1W",
+   "lib": "Device",
+   "part": "R",
+   "fields": {}
+  },
+  {
+   "ref": "R28",
+   "value": "22;1W",
+   "lib": "Device",
+   "part": "R",
+   "fields": {}
+  },
+  {
+   "ref": "R29",
+   "value": "10k",
+   "lib": "Device",
+   "part": "R",
+   "fields": {}
+  },
+  {
+   "ref": "R3",
+   "value": "150R",
+   "lib": "Device",
+   "part": "R",
+   "fields": {}
+  },
+  {
+   "ref": "R30",
+   "value": "10k",
+   "lib": "Device",
+   "part": "R",
+   "fields": {}
+  },
+  {
+   "ref": "R31",
+   "value": "10;2W",
+   "lib": "Device",
+   "part": "R",
+   "fields": {}
+  },
+  {
+   "ref": "R32",
+   "value": "1u",
+   "lib": "Device",
+   "part": "R",
+   "fields": {}
+  },
+  {
+   "ref": "R4",
+   "value": "100",
+   "lib": "Device",
+   "part": "R",
+   "fields": {}
+  },
+  {
+   "ref": "R5",
+   "value": "10",
+   "lib": "Device",
+   "part": "R",
+   "fields": {}
+  },
+  {
+   "ref": "R6",
+   "value": "100;0.5W",
+   "lib": "Device",
+   "part": "R",
+   "fields": {}
+  },
+  {
+   "ref": "R7",
+   "value": "100R",
+   "lib": "Device",
+   "part": "R",
+   "fields": {}
+  },
+  {
+   "ref": "R8",
+   "value": "120R",
+   "lib": "Device",
+   "part": "R",
+   "fields": {}
+  },
+  {
+   "ref": "R9",
+   "value": "100R",
+   "lib": "Device",
+   "part": "R",
+   "fields": {}
+  },
+  {
+   "ref": "RLoad2",
+   "value": "R = 'TIME > 300m ? 7 : 8'",
+   "lib": "Device",
+   "part": "R",
+   "fields": {}
+  },
+  {
+   "ref": "U1",
+   "value": "OPA1641",
+   "lib": "Amplifier_Operational",
+   "part": "OPA1641",
+   "fields": {
+    "Sim.Library": "OPA1641.LIB",
+    "Sim.Name": "OPA1641",
+    "Sim.Pins": "3=1 2=2 7=3 4=4 6=5"
+   }
+  },
+  {
+   "ref": "Vin1",
+   "value": "VSIN",
+   "lib": "Simulation_SPICE",
+   "part": "VSIN",
+   "fields": {
+    "Sim.Device": "V",
+    "Sim.Type": "SIN",
+    "Sim.Params": "dc=0 ampl=0.7 f=1k",
+    "Sim.Pins": "1=+ 2=-"
+   }
+  },
+  {
+   "ref": "Vp1",
+   "value": "50",
+   "lib": "Simulation_SPICE",
+   "part": "VDC",
+   "fields": {
+    "Sim.Device": "V",
+    "Sim.Type": "DC",
+    "Sim.Pins": "1=+ 2=-"
+   }
+  },
+  {
+   "ref": "Vp2",
+   "value": "-50",
+   "lib": "Simulation_SPICE",
+   "part": "VDC",
+   "fields": {
+    "Sim.Device": "V",
+    "Sim.Type": "DC",
+    "Sim.Pins": "1=+ 2=-"
+   }
+  }
+ ],
+ "nets": [
+  {
+   "name": "/v+",
+   "nodes": [
+    {
+     "ref": "C3",
+     "pin": "1",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "C4",
+     "pin": "2",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "Q1",
+     "pin": "3",
+     "function": "S_3",
+     "type": "passive"
+    },
+    {
+     "ref": "U1",
+     "pin": "7",
+     "function": "V+_7",
+     "type": "power_in"
+    }
+   ]
+  },
+  {
+   "name": "/v-",
+   "nodes": [
+    {
+     "ref": "C5",
+     "pin": "2",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "C6",
+     "pin": "2",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "Q4",
+     "pin": "3",
+     "function": "S_3",
+     "type": "passive"
+    },
+    {
+     "ref": "U1",
+     "pin": "4",
+     "function": "V-_4",
+     "type": "power_in"
+    }
+   ]
+  },
+  {
+   "name": "/vdd",
+   "nodes": [
+    {
+     "ref": "C11",
+     "pin": "2",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "D1",
+     "pin": "2",
+     "function": "A_2",
+     "type": "passive"
+    },
+    {
+     "ref": "D6",
+     "pin": "2",
+     "function": "A_2",
+     "type": "passive"
+    },
+    {
+     "ref": "Q1",
+     "pin": "2",
+     "function": "D_2",
+     "type": "passive"
+    },
+    {
+     "ref": "Q10",
+     "pin": "1",
+     "function": "E_1",
+     "type": "passive"
+    },
+    {
+     "ref": "Q13",
+     "pin": "3",
+     "function": "S_3",
+     "type": "passive"
+    },
+    {
+     "ref": "R10",
+     "pin": "1",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "R19",
+     "pin": "1",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "R3",
+     "pin": "1",
+     "function": null,
+     "type": "passive"
+    }
+   ]
+  },
+  {
+   "name": "/vgq13",
+   "nodes": [
+    {
+     "ref": "C13",
+     "pin": "1",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "D6",
+     "pin": "1",
+     "function": "K_1",
+     "type": "passive"
+    },
+    {
+     "ref": "Q13",
+     "pin": "1",
+     "function": "G_1",
+     "type": "input"
+    },
+    {
+     "ref": "R29",
+     "pin": "2",
+     "function": null,
+     "type": "passive"
+    }
+   ]
+  },
+  {
+   "name": "/vgq14",
+   "nodes": [
+    {
+     "ref": "C14",
+     "pin": "2",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "D5",
+     "pin": "2",
+     "function": "A_2",
+     "type": "passive"
+    },
+    {
+     "ref": "Q14",
+     "pin": "1",
+     "function": "G_1",
+     "type": "input"
+    },
+    {
+     "ref": "R30",
+     "pin": "1",
+     "function": null,
+     "type": "passive"
+    }
+   ]
+  },
+  {
+   "name": "/vss",
+   "nodes": [
+    {
+     "ref": "C12",
+     "pin": "2",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "D4",
+     "pin": "1",
+     "function": "K_1",
+     "type": "passive"
+    },
+    {
+     "ref": "D5",
+     "pin": "1",
+     "function": "K_1",
+     "type": "passive"
+    },
+    {
+     "ref": "Q12",
+     "pin": "1",
+     "function": "E_1",
+     "type": "passive"
+    },
+    {
+     "ref": "Q14",
+     "pin": "3",
+     "function": "S_3",
+     "type": "passive"
+    },
+    {
+     "ref": "Q4",
+     "pin": "2",
+     "function": "D_2",
+     "type": "passive"
+    },
+    {
+     "ref": "R13",
+     "pin": "2",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "R20",
+     "pin": "1",
+     "function": null,
+     "type": "passive"
+    }
+   ]
+  },
+  {
+   "name": "GND",
+   "nodes": [
+    {
+     "ref": "C1",
+     "pin": "2",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "C2",
+     "pin": "2",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "C3",
+     "pin": "2",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "C4",
+     "pin": "1",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "C5",
+     "pin": "1",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "C6",
+     "pin": "1",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "C8",
+     "pin": "1",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "C9",
+     "pin": "1",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "D2",
+     "pin": "2",
+     "function": "A_2",
+     "type": "passive"
+    },
+    {
+     "ref": "D3",
+     "pin": "1",
+     "function": "K_1",
+     "type": "passive"
+    },
+    {
+     "ref": "J1",
+     "pin": "1",
+     "function": "Pin_1_1",
+     "type": "passive"
+    },
+    {
+     "ref": "R16",
+     "pin": "1",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "R2",
+     "pin": "2",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "R21",
+     "pin": "2",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "R32",
+     "pin": "1",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "R6",
+     "pin": "2",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "Vin1",
+     "pin": "2",
+     "function": null,
+     "type": "passive"
+    }
+   ]
+  },
+  {
+   "name": "GNDPWR",
+   "nodes": [
+    {
+     "ref": "C11",
+     "pin": "1",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "C12",
+     "pin": "1",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "C13",
+     "pin": "2",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "C14",
+     "pin": "1",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "C15",
+     "pin": "2",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "C16",
+     "pin": "1",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "C17",
+     "pin": "2",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "C18",
+     "pin": "1",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "C19",
+     "pin": "2",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "C20",
+     "pin": "2",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "C21",
+     "pin": "1",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "J2",
+     "pin": "2",
+     "function": "Pin_2_2",
+     "type": "passive"
+    },
+    {
+     "ref": "J3",
+     "pin": "2",
+     "function": "Pin_2_2",
+     "type": "passive"
+    },
+    {
+     "ref": "R32",
+     "pin": "2",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "RLoad2",
+     "pin": "1",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "Vp1",
+     "pin": "2",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "Vp2",
+     "pin": "2",
+     "function": null,
+     "type": "passive"
+    }
+   ]
+  },
+  {
+   "name": "Net-(C2-Pad1)",
+   "nodes": [
+    {
+     "ref": "C2",
+     "pin": "1",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "R17",
+     "pin": "1",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "R23",
+     "pin": "1",
+     "function": null,
+     "type": "passive"
+    }
+   ]
+  },
+  {
+   "name": "Net-(C7-Pad1)",
+   "nodes": [
+    {
+     "ref": "C7",
+     "pin": "1",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "R18",
+     "pin": "1",
+     "function": null,
+     "type": "passive"
+    }
+   ]
+  },
+  {
+   "name": "Net-(C10-Pad1)",
+   "nodes": [
+    {
+     "ref": "C10",
+     "pin": "1",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "R11",
+     "pin": "2",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "R12",
+     "pin": "1",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "R26",
+     "pin": "1",
+     "function": null,
+     "type": "passive"
+    }
+   ]
+  },
+  {
+   "name": "Net-(C17-Pad1)",
+   "nodes": [
+    {
+     "ref": "C17",
+     "pin": "1",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "R31",
+     "pin": "2",
+     "function": null,
+     "type": "passive"
+    }
+   ]
+  },
+  {
+   "name": "Net-(D1-K)",
+   "nodes": [
+    {
+     "ref": "D1",
+     "pin": "1",
+     "function": "K_1",
+     "type": "passive"
+    },
+    {
+     "ref": "Q2",
+     "pin": "3",
+     "function": "B_3",
+     "type": "input"
+    },
+    {
+     "ref": "R2",
+     "pin": "1",
+     "function": null,
+     "type": "passive"
+    }
+   ]
+  },
+  {
+   "name": "Net-(D2-K)",
+   "nodes": [
+    {
+     "ref": "C9",
+     "pin": "2",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "D2",
+     "pin": "1",
+     "function": "K_1",
+     "type": "passive"
+    },
+    {
+     "ref": "Q1",
+     "pin": "1",
+     "function": "G_1",
+     "type": "input"
+    },
+    {
+     "ref": "Q2",
+     "pin": "2",
+     "function": "C_2",
+     "type": "passive"
+    },
+    {
+     "ref": "R4",
+     "pin": "1",
+     "function": null,
+     "type": "passive"
+    }
+   ]
+  },
+  {
+   "name": "Net-(D3-A)",
+   "nodes": [
+    {
+     "ref": "C8",
+     "pin": "2",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "D3",
+     "pin": "2",
+     "function": "A_2",
+     "type": "passive"
+    },
+    {
+     "ref": "Q3",
+     "pin": "2",
+     "function": "C_2",
+     "type": "passive"
+    },
+    {
+     "ref": "Q4",
+     "pin": "1",
+     "function": "G_1",
+     "type": "input"
+    }
+   ]
+  },
+  {
+   "name": "Net-(D4-A)",
+   "nodes": [
+    {
+     "ref": "D4",
+     "pin": "2",
+     "function": "A_2",
+     "type": "passive"
+    },
+    {
+     "ref": "Q3",
+     "pin": "3",
+     "function": "B_3",
+     "type": "passive"
+    },
+    {
+     "ref": "R21",
+     "pin": "1",
+     "function": null,
+     "type": "passive"
+    }
+   ]
+  },
+  {
+   "name": "Net-(Q2-E)",
+   "nodes": [
+    {
+     "ref": "Q2",
+     "pin": "1",
+     "function": "E_1",
+     "type": "passive"
+    },
+    {
+     "ref": "R19",
+     "pin": "2",
+     "function": null,
+     "type": "passive"
+    }
+   ]
+  },
+  {
+   "name": "Net-(Q3-E)",
+   "nodes": [
+    {
+     "ref": "Q3",
+     "pin": "1",
+     "function": "E_1",
+     "type": "passive"
+    },
+    {
+     "ref": "R20",
+     "pin": "2",
+     "function": null,
+     "type": "passive"
+    }
+   ]
+  },
+  {
+   "name": "Net-(Q5-D)",
+   "nodes": [
+    {
+     "ref": "Q5",
+     "pin": "2",
+     "function": "D_2",
+     "type": "passive"
+    },
+    {
+     "ref": "R11",
+     "pin": "1",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "R14",
+     "pin": "1",
+     "function": null,
+     "type": "passive"
+    }
+   ]
+  },
+  {
+   "name": "Net-(Q5-G)",
+   "nodes": [
+    {
+     "ref": "Q5",
+     "pin": "1",
+     "function": "G_1",
+     "type": "input"
+    },
+    {
+     "ref": "R7",
+     "pin": "2",
+     "function": null,
+     "type": "passive"
+    }
+   ]
+  },
+  {
+   "name": "Net-(Q5-S)",
+   "nodes": [
+    {
+     "ref": "Q5",
+     "pin": "3",
+     "function": "S_3",
+     "type": "passive"
+    },
+    {
+     "ref": "R10",
+     "pin": "2",
+     "function": null,
+     "type": "passive"
+    }
+   ]
+  },
+  {
+   "name": "Net-(Q6-D)",
+   "nodes": [
+    {
+     "ref": "Q6",
+     "pin": "2",
+     "function": "D_2",
+     "type": "passive"
+    },
+    {
+     "ref": "R12",
+     "pin": "2",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "R15",
+     "pin": "1",
+     "function": null,
+     "type": "passive"
+    }
+   ]
+  },
+  {
+   "name": "Net-(Q6-G)",
+   "nodes": [
+    {
+     "ref": "Q6",
+     "pin": "1",
+     "function": "G_1",
+     "type": "input"
+    },
+    {
+     "ref": "R8",
+     "pin": "2",
+     "function": null,
+     "type": "passive"
+    }
+   ]
+  },
+  {
+   "name": "Net-(Q6-S)",
+   "nodes": [
+    {
+     "ref": "Q6",
+     "pin": "3",
+     "function": "S_3",
+     "type": "passive"
+    },
+    {
+     "ref": "R13",
+     "pin": "1",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "R9",
+     "pin": "2",
+     "function": null,
+     "type": "passive"
+    }
+   ]
+  },
+  {
+   "name": "Net-(Q7-B)",
+   "nodes": [
+    {
+     "ref": "C1",
+     "pin": "1",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "Q7",
+     "pin": "3",
+     "function": "B_3",
+     "type": "passive"
+    },
+    {
+     "ref": "R1",
+     "pin": "2",
+     "function": null,
+     "type": "passive"
+    }
+   ]
+  },
+  {
+   "name": "Net-(Q7-C)",
+   "nodes": [
+    {
+     "ref": "Q7",
+     "pin": "2",
+     "function": "C_2",
+     "type": "passive"
+    },
+    {
+     "ref": "R5",
+     "pin": "2",
+     "function": null,
+     "type": "passive"
+    }
+   ]
+  },
+  {
+   "name": "Net-(Q7-E)",
+   "nodes": [
+    {
+     "ref": "C10",
+     "pin": "2",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "Q7",
+     "pin": "1",
+     "function": "E_1",
+     "type": "passive"
+    },
+    {
+     "ref": "R27",
+     "pin": "1",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "R6",
+     "pin": "1",
+     "function": null,
+     "type": "passive"
+    }
+   ]
+  },
+  {
+   "name": "Net-(Q8-D)",
+   "nodes": [
+    {
+     "ref": "Q8",
+     "pin": "3",
+     "function": "D_3",
+     "type": "passive"
+    },
+    {
+     "ref": "Q9",
+     "pin": "1",
+     "function": "D_1",
+     "type": "passive"
+    },
+    {
+     "ref": "R7",
+     "pin": "1",
+     "function": null,
+     "type": "passive"
+    }
+   ]
+  },
+  {
+   "name": "Net-(Q8-G)",
+   "nodes": [
+    {
+     "ref": "Q8",
+     "pin": "2",
+     "function": "G_2",
+     "type": "input"
+    },
+    {
+     "ref": "R4",
+     "pin": "2",
+     "function": null,
+     "type": "passive"
+    }
+   ]
+  },
+  {
+   "name": "Net-(Q8-S)",
+   "nodes": [
+    {
+     "ref": "Q8",
+     "pin": "1",
+     "function": "S_1",
+     "type": "passive"
+    },
+    {
+     "ref": "R5",
+     "pin": "1",
+     "function": null,
+     "type": "passive"
+    }
+   ]
+  },
+  {
+   "name": "Net-(Q9-S)",
+   "nodes": [
+    {
+     "ref": "Q9",
+     "pin": "3",
+     "function": "S_3",
+     "type": "passive"
+    },
+    {
+     "ref": "R3",
+     "pin": "2",
+     "function": null,
+     "type": "passive"
+    }
+   ]
+  },
+  {
+   "name": "Net-(Q10-B)",
+   "nodes": [
+    {
+     "ref": "Q10",
+     "pin": "2",
+     "function": "C_2",
+     "type": "passive"
+    },
+    {
+     "ref": "Q10",
+     "pin": "3",
+     "function": "B_3",
+     "type": "input"
+    },
+    {
+     "ref": "Q11",
+     "pin": "3",
+     "function": "S_3",
+     "type": "passive"
+    }
+   ]
+  },
+  {
+   "name": "Net-(Q11-D)",
+   "nodes": [
+    {
+     "ref": "Q11",
+     "pin": "1",
+     "function": "D_1",
+     "type": "passive"
+    },
+    {
+     "ref": "Q11",
+     "pin": "2",
+     "function": "G_2",
+     "type": "input"
+    },
+    {
+     "ref": "Q9",
+     "pin": "2",
+     "function": "G_2",
+     "type": "input"
+    },
+    {
+     "ref": "R24",
+     "pin": "1",
+     "function": null,
+     "type": "passive"
+    }
+   ]
+  },
+  {
+   "name": "Net-(Q12-B)",
+   "nodes": [
+    {
+     "ref": "Q12",
+     "pin": "3",
+     "function": "B_3",
+     "type": "passive"
+    },
+    {
+     "ref": "R9",
+     "pin": "1",
+     "function": null,
+     "type": "passive"
+    }
+   ]
+  },
+  {
+   "name": "Net-(Q12-C)",
+   "nodes": [
+    {
+     "ref": "Q12",
+     "pin": "2",
+     "function": "C_2",
+     "type": "passive"
+    },
+    {
+     "ref": "R25",
+     "pin": "2",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "R8",
+     "pin": "1",
+     "function": null,
+     "type": "passive"
+    }
+   ]
+  },
+  {
+   "name": "Net-(Q15-G)",
+   "nodes": [
+    {
+     "ref": "Q15",
+     "pin": "1",
+     "function": "G_1",
+     "type": "input"
+    },
+    {
+     "ref": "R14",
+     "pin": "2",
+     "function": null,
+     "type": "passive"
+    }
+   ]
+  },
+  {
+   "name": "Net-(Q15-S)",
+   "nodes": [
+    {
+     "ref": "L1",
+     "pin": "2",
+     "function": "2_2",
+     "type": "passive"
+    },
+    {
+     "ref": "Q15",
+     "pin": "3",
+     "function": "S_3",
+     "type": "passive"
+    },
+    {
+     "ref": "Q16",
+     "pin": "3",
+     "function": "S_3",
+     "type": "passive"
+    },
+    {
+     "ref": "R27",
+     "pin": "2",
+     "function": null,
+     "type": "passive"
+    }
+   ]
+  },
+  {
+   "name": "Net-(Q16-G)",
+   "nodes": [
+    {
+     "ref": "Q16",
+     "pin": "1",
+     "function": "G_1",
+     "type": "input"
+    },
+    {
+     "ref": "R15",
+     "pin": "2",
+     "function": null,
+     "type": "passive"
+    }
+   ]
+  },
+  {
+   "name": "Net-(R1-Pad1)",
+   "nodes": [
+    {
+     "ref": "R1",
+     "pin": "1",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "R18",
+     "pin": "2",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "U1",
+     "pin": "6",
+     "function": null,
+     "type": "output"
+    }
+   ]
+  },
+  {
+   "name": "Net-(R24-Pad2)",
+   "nodes": [
+    {
+     "ref": "R24",
+     "pin": "2",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "R25",
+     "pin": "1",
+     "function": null,
+     "type": "passive"
+    }
+   ]
+  },
+  {
+   "name": "Net-(R26-Pad2)",
+   "nodes": [
+    {
+     "ref": "R26",
+     "pin": "2",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "R28",
+     "pin": "1",
+     "function": null,
+     "type": "passive"
+    }
+   ]
+  },
+  {
+   "name": "Net-(U1--)",
+   "nodes": [
+    {
+     "ref": "C7",
+     "pin": "2",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "R17",
+     "pin": "2",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "U1",
+     "pin": "2",
+     "function": "-_2",
+     "type": "input"
+    }
+   ]
+  },
+  {
+   "name": "in",
+   "nodes": [
+    {
+     "ref": "J1",
+     "pin": "2",
+     "function": "Pin_2_2",
+     "type": "passive"
+    },
+    {
+     "ref": "R16",
+     "pin": "2",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "U1",
+     "pin": "3",
+     "function": "+_3",
+     "type": "input"
+    },
+    {
+     "ref": "Vin1",
+     "pin": "1",
+     "function": null,
+     "type": "passive"
+    }
+   ]
+  },
+  {
+   "name": "out",
+   "nodes": [
+    {
+     "ref": "J2",
+     "pin": "1",
+     "function": "Pin_1_1",
+     "type": "passive"
+    },
+    {
+     "ref": "L1",
+     "pin": "1",
+     "function": "1_1",
+     "type": "passive"
+    },
+    {
+     "ref": "R23",
+     "pin": "2",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "R28",
+     "pin": "2",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "R31",
+     "pin": "1",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "RLoad2",
+     "pin": "2",
+     "function": null,
+     "type": "passive"
+    }
+   ]
+  },
+  {
+   "name": "p+",
+   "nodes": [
+    {
+     "ref": "C15",
+     "pin": "1",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "C18",
+     "pin": "2",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "C20",
+     "pin": "1",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "J3",
+     "pin": "1",
+     "function": "Pin_1_1",
+     "type": "passive"
+    },
+    {
+     "ref": "Q13",
+     "pin": "2",
+     "function": "D_2",
+     "type": "passive"
+    },
+    {
+     "ref": "Q15",
+     "pin": "2",
+     "function": "D_2",
+     "type": "passive"
+    },
+    {
+     "ref": "R29",
+     "pin": "1",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "Vp1",
+     "pin": "1",
+     "function": null,
+     "type": "passive"
+    }
+   ]
+  },
+  {
+   "name": "p-",
+   "nodes": [
+    {
+     "ref": "C16",
+     "pin": "2",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "C19",
+     "pin": "1",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "C21",
+     "pin": "2",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "J3",
+     "pin": "3",
+     "function": "Pin_3_3",
+     "type": "passive"
+    },
+    {
+     "ref": "Q14",
+     "pin": "2",
+     "function": "D_2",
+     "type": "passive"
+    },
+    {
+     "ref": "Q16",
+     "pin": "2",
+     "function": "D_2",
+     "type": "passive"
+    },
+    {
+     "ref": "R30",
+     "pin": "2",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "Vp2",
+     "pin": "1",
+     "function": null,
+     "type": "passive"
+    }
+   ]
+  },
+  {
+   "name": "unconnected-(U1-NC-Pad1)",
+   "nodes": [
+    {
+     "ref": "U1",
+     "pin": "1",
+     "function": "NC_1",
+     "type": "no_connect"
+    }
+   ]
+  },
+  {
+   "name": "unconnected-(U1-NC-Pad5)",
+   "nodes": [
+    {
+     "ref": "U1",
+     "pin": "5",
+     "function": "NC_5",
+     "type": "no_connect"
+    }
+   ]
+  },
+  {
+   "name": "unconnected-(U1-NC-Pad8)",
+   "nodes": [
+    {
+     "ref": "U1",
+     "pin": "8",
+     "function": "NC_8",
+     "type": "no_connect"
+    }
+   ]
+  }
+ ],
+ "source": "KiCad demos/simulation/q17/Q17ng.kicad_sch @ 4b68fa789b38"
+}

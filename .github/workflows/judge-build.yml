@@ -1,0 +1,41 @@
+name: Judges' build
+
+# The hackathon judge checks the repo out on plain Linux without secrets and builds the root
+# Dockerfile (D77). Its context differs from the CI jobs (Python 3.13 only, Debian packages, no
+# docs/), so build it the same way here. Docs and Markdown cannot break it.
+# Manual only (2026-10-17): the private repo's Actions minutes are used up and will not be
+# topped up, so nothing runs automatically. Merges are gated by a local build of the root
+# Dockerfile (AGENTS.md). To restore, put back the triggers in the comment below.
+# on:
+#   push:
+#     branches: [main]
+#     paths-ignore: ["docs/**", "**/*.md"]
+#   schedule:
+#     - cron: "17 2 * * *"
+#   workflow_dispatch:
+on:
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  docker-build:
+    name: docker build . (root Dockerfile)
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      # No LFS, like a plain checkout: tests on the sample drawings skip, everything else runs.
+      - uses: actions/checkout@v4
+      - name: Build like the judges
+        run: docker build -t mechatronikers:ci .
+      - name: Service image answers
+        run: |
+          docker run -d --name svc -p 127.0.0.1:8000:8000 mechatronikers:ci
+          for _ in $(seq 1 30); do
+            if curl -fsS 127.0.0.1:8000/health; then exit 0; fi
+            sleep 2
+          done
+          docker logs svc
+          exit 1

@@ -1,0 +1,38 @@
+{
+ "about": "Circuit test cases from KiCad demos (GPL-3.0-or-later), created by scripts/make_circuit_cases.py. dev = used while developing circuit-mcp; holdout = measured only, never tuned on. gain_control, generic_opamp and lm317_supply moved from holdout to dev after the first holdout run.",
+ "cases": {
+  "rectifier": {
+   "split": "dev"
+  },
+  "sallen_key": {
+   "split": "dev"
+  },
+  "amplifier_ac": {
+   "split": "dev"
+  },
+  "v_i_sources": {
+   "split": "dev"
+  },
+  "ecc83": {
+   "split": "dev"
+  },
+  "laser_driver": {
+   "split": "holdout"
+  },
+  "generic_opamp": {
+   "split": "dev"
+  },
+  "analog_multiplier": {
+   "split": "holdout"
+  },
+  "lm317_supply": {
+   "split": "dev"
+  },
+  "q17": {
+   "split": "holdout"
+  },
+  "gain_control": {
+   "split": "dev"
+  }
+ }
+}

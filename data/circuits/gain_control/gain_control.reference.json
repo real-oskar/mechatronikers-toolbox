@@ -1,0 +1,197 @@
+{
+ "tool": "Eeschema 10.0.1",
+ "components": [
+  {
+   "ref": "U1",
+   "value": "VCA810",
+   "lib": "VCA810",
+   "part": "VCA810",
+   "fields": {
+    "Sim.Library": "vca810.lib",
+    "Sim.Name": "VCA810",
+    "Sim.Device": "SUBCKT",
+    "Sim.Pins": "1=1 2=2 3=3 5=5 6=6 7=7 8=8"
+   }
+  },
+  {
+   "ref": "V1",
+   "value": "5",
+   "lib": "Simulation_SPICE",
+   "part": "VDC",
+   "fields": {
+    "Sim.Pins": "1=+ 2=-",
+    "Sim.Type": "DC",
+    "Sim.Device": "V"
+   }
+  },
+  {
+   "ref": "V2",
+   "value": "5",
+   "lib": "Simulation_SPICE",
+   "part": "VDC",
+   "fields": {
+    "Sim.Pins": "1=+ 2=-",
+    "Sim.Type": "DC",
+    "Sim.Device": "V"
+   }
+  },
+  {
+   "ref": "V3",
+   "value": "VSIN",
+   "lib": "Simulation_SPICE",
+   "part": "VSIN",
+   "fields": {
+    "Sim.Pins": "1=+ 2=-",
+    "Sim.Params": "dc=0 ampl=10m f=1k ac=1",
+    "Sim.Type": "SIN",
+    "Sim.Device": "V"
+   }
+  },
+  {
+   "ref": "V4",
+   "value": "VPWL",
+   "lib": "Simulation_SPICE",
+   "part": "VPWL",
+   "fields": {
+    "Sim.Pins": "1=+ 2=-",
+    "Sim.Device": "V",
+    "Sim.Params": "pwl=\"0 -1.2 10m -1.2 10.01m -1.6 20m -1.6 20.1m -2 100m -2\"",
+    "Sim.Type": "PWL"
+   }
+  }
+ ],
+ "nets": [
+  {
+   "name": "+5V",
+   "nodes": [
+    {
+     "ref": "U1",
+     "pin": "6",
+     "function": "V+_6",
+     "type": "power_in"
+    },
+    {
+     "ref": "V1",
+     "pin": "1",
+     "function": null,
+     "type": "passive"
+    }
+   ]
+  },
+  {
+   "name": "-5V",
+   "nodes": [
+    {
+     "ref": "U1",
+     "pin": "7",
+     "function": "V-_7",
+     "type": "power_in"
+    },
+    {
+     "ref": "V2",
+     "pin": "2",
+     "function": null,
+     "type": "passive"
+    }
+   ]
+  },
+  {
+   "name": "/gain",
+   "nodes": [
+    {
+     "ref": "U1",
+     "pin": "3",
+     "function": "Gain_3",
+     "type": "input"
+    },
+    {
+     "ref": "V4",
+     "pin": "1",
+     "function": null,
+     "type": "passive"
+    }
+   ]
+  },
+  {
+   "name": "/in",
+   "nodes": [
+    {
+     "ref": "U1",
+     "pin": "1",
+     "function": "+_1",
+     "type": "input"
+    },
+    {
+     "ref": "V3",
+     "pin": "1",
+     "function": null,
+     "type": "passive"
+    }
+   ]
+  },
+  {
+   "name": "/out",
+   "nodes": [
+    {
+     "ref": "U1",
+     "pin": "5",
+     "function": null,
+     "type": "output"
+    }
+   ]
+  },
+  {
+   "name": "GND",
+   "nodes": [
+    {
+     "ref": "U1",
+     "pin": "2",
+     "function": "GND_2",
+     "type": "input"
+    },
+    {
+     "ref": "U1",
+     "pin": "8",
+     "function": "-_8",
+     "type": "input"
+    },
+    {
+     "ref": "V1",
+     "pin": "2",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "V2",
+     "pin": "1",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "V3",
+     "pin": "2",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "V4",
+     "pin": "2",
+     "function": null,
+     "type": "passive"
+    }
+   ]
+  },
+  {
+   "name": "unconnected-(U1-NC-Pad4)",
+   "nodes": [
+    {
+     "ref": "U1",
+     "pin": "4",
+     "function": "NC_4",
+     "type": "no_connect"
+    }
+   ]
+  }
+ ],
+ "source": "KiCad demos/simulation/gain_control/mult_vca810.kicad_sch @ 4b68fa789b38"
+}

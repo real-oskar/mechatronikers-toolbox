@@ -1,0 +1,349 @@
+{
+ "tool": "Eeschema 10.0.1",
+ "components": [
+  {
+   "ref": "C1",
+   "value": "1p",
+   "lib": "laser_driver_schlib",
+   "part": "C",
+   "fields": {}
+  },
+  {
+   "ref": "C2",
+   "value": "1p",
+   "lib": "laser_driver_schlib",
+   "part": "C",
+   "fields": {}
+  },
+  {
+   "ref": "D1",
+   "value": "laser diode",
+   "lib": "laser_driver_schlib",
+   "part": "LED",
+   "fields": {
+    "Sim.Library": "laser.lib",
+    "Sim.Name": "laser",
+    "Sim.Pins": "2=1 1=2"
+   }
+  },
+  {
+   "ref": "Q1",
+   "value": "fzt1049a",
+   "lib": "laser_driver_schlib",
+   "part": "Q_NPN_CBE",
+   "fields": {
+    "Sim.Library": "fzt1049a.lib",
+    "Sim.Name": "fzt1049a",
+    "Sim.Pins": "1=C 1=C 2=B 2=B 3=E 3=E"
+   }
+  },
+  {
+   "ref": "R1",
+   "value": "220",
+   "lib": "laser_driver_schlib",
+   "part": "R",
+   "fields": {}
+  },
+  {
+   "ref": "R2",
+   "value": "160",
+   "lib": "laser_driver_schlib",
+   "part": "R",
+   "fields": {}
+  },
+  {
+   "ref": "R3",
+   "value": "220",
+   "lib": "laser_driver_schlib",
+   "part": "R",
+   "fields": {}
+  },
+  {
+   "ref": "R4",
+   "value": "220",
+   "lib": "laser_driver_schlib",
+   "part": "R",
+   "fields": {}
+  },
+  {
+   "ref": "R5",
+   "value": "2.5",
+   "lib": "laser_driver_schlib",
+   "part": "R",
+   "fields": {}
+  },
+  {
+   "ref": "U1",
+   "value": "AD8009",
+   "lib": "laser_driver_schlib",
+   "part": "Generic_Opamp",
+   "fields": {
+    "Sim.Library": "ad8009.lib",
+    "Sim.Name": "ad8009",
+    "Sim.Pins": "1=1 2=2 3=99 4=50 5=28"
+   }
+  },
+  {
+   "ref": "V1",
+   "value": "pulse (check properties)",
+   "lib": "laser_driver_schlib",
+   "part": "VPULSE",
+   "fields": {
+    "Sim.Device": "V",
+    "Sim.Type": "PULSE",
+    "Sim.Params": "y1=0 y2=3 td=100n tr=1n tf=1n tw=20n per=100n",
+    "Sim.Pins": "1=+ 2=-"
+   }
+  },
+  {
+   "ref": "V2",
+   "value": "10",
+   "lib": "laser_driver_schlib",
+   "part": "VDC",
+   "fields": {
+    "Sim.Device": "V",
+    "Sim.Type": "DC",
+    "Sim.Pins": "1=1 2=2"
+   }
+  },
+  {
+   "ref": "V3",
+   "value": "10",
+   "lib": "laser_driver_schlib",
+   "part": "VDC",
+   "fields": {
+    "Sim.Device": "V",
+    "Sim.Type": "DC",
+    "Sim.Pins": "1=1 2=2"
+   }
+  }
+ ],
+ "nets": [
+  {
+   "name": "/in",
+   "nodes": [
+    {
+     "ref": "R2",
+     "pin": "2",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "V1",
+     "pin": "1",
+     "function": null,
+     "type": "passive"
+    }
+   ]
+  },
+  {
+   "name": "/out",
+   "nodes": [
+    {
+     "ref": "C2",
+     "pin": "1",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "D1",
+     "pin": "2",
+     "function": "A_2",
+     "type": "passive"
+    },
+    {
+     "ref": "R4",
+     "pin": "1",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "R5",
+     "pin": "1",
+     "function": null,
+     "type": "passive"
+    }
+   ]
+  },
+  {
+   "name": "GND",
+   "nodes": [
+    {
+     "ref": "D1",
+     "pin": "1",
+     "function": "K_1",
+     "type": "passive"
+    },
+    {
+     "ref": "R1",
+     "pin": "2",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "V1",
+     "pin": "2",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "V2",
+     "pin": "2",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "V3",
+     "pin": "1",
+     "function": null,
+     "type": "passive"
+    }
+   ]
+  },
+  {
+   "name": "Net-(Q1-B)",
+   "nodes": [
+    {
+     "ref": "Q1",
+     "pin": "2",
+     "function": "B_2",
+     "type": "input"
+    },
+    {
+     "ref": "U1",
+     "pin": "5",
+     "function": null,
+     "type": "output"
+    }
+   ]
+  },
+  {
+   "name": "Net-(Q1-E)",
+   "nodes": [
+    {
+     "ref": "C1",
+     "pin": "2",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "C2",
+     "pin": "2",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "Q1",
+     "pin": "3",
+     "function": "E_3",
+     "type": "passive"
+    },
+    {
+     "ref": "R3",
+     "pin": "1",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "R5",
+     "pin": "2",
+     "function": null,
+     "type": "passive"
+    }
+   ]
+  },
+  {
+   "name": "Net-(U1-+)",
+   "nodes": [
+    {
+     "ref": "R2",
+     "pin": "1",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "R4",
+     "pin": "2",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "U1",
+     "pin": "1",
+     "function": "+_1",
+     "type": "input"
+    }
+   ]
+  },
+  {
+   "name": "Net-(U1--)",
+   "nodes": [
+    {
+     "ref": "C1",
+     "pin": "1",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "R1",
+     "pin": "1",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "R3",
+     "pin": "2",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "U1",
+     "pin": "2",
+     "function": "-_2",
+     "type": "input"
+    }
+   ]
+  },
+  {
+   "name": "VDD",
+   "nodes": [
+    {
+     "ref": "Q1",
+     "pin": "1",
+     "function": "C_1",
+     "type": "passive"
+    },
+    {
+     "ref": "U1",
+     "pin": "3",
+     "function": "V+_3",
+     "type": "power_in"
+    },
+    {
+     "ref": "V2",
+     "pin": "1",
+     "function": null,
+     "type": "passive"
+    }
+   ]
+  },
+  {
+   "name": "VSS",
+   "nodes": [
+    {
+     "ref": "U1",
+     "pin": "4",
+     "function": "V-_4",
+     "type": "power_in"
+    },
+    {
+     "ref": "V3",
+     "pin": "2",
+     "function": null,
+     "type": "passive"
+    }
+   ]
+  }
+ ],
+ "source": "KiCad demos/simulation/laser_driver/laser_driver.kicad_sch @ 4b68fa789b38"
+}

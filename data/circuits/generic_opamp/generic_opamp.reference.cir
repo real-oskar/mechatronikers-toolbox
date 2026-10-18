@@ -1,0 +1,18 @@
+.title KiCad schematic
+.include "Simulation_SPICE.sp"
+.model __Q1 NPN
+V2 +5V 0 DC 5 
+C1 /in Net-_Q1-B_ 1u
+R2 Net-_U1--_ /in 10k
+XU1 0 Net-_U1--_ +5V -5V /out kicad_builtin_opamp POLE=30 GAIN=100k VOFF=10u ROUT=10
+R1 /out Net-_U1--_ 100k
+V1 0 -5V DC 5 
+V3 /in 0 DC 0 SIN( 0 0.1 1k 0 0 0 ) AC 1  
+R5 +5V Net-_Q1-C_ 5k
+C2 Net-_Q1-C_ /outb 1u
+R3 Net-_Q1-B_ 0 10k
+Q1 Net-_Q1-C_ Net-_Q1-B_ Net-_Q1-E_ __Q1
+R6 Net-_Q1-E_ 0 330
+R7 /outb 0 100k
+R4 +5V Net-_Q1-B_ 50k
+.end

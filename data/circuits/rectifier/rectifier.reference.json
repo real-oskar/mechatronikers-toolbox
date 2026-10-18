@@ -1,0 +1,139 @@
+{
+ "tool": "Eeschema 10.0.1",
+ "components": [
+  {
+   "ref": "C1",
+   "value": "100n",
+   "lib": "rectifier_schlib",
+   "part": "C",
+   "fields": {
+    "Sim.Pins": "1=1 2=2"
+   }
+  },
+  {
+   "ref": "D1",
+   "value": "1N4148",
+   "lib": "rectifier_schlib",
+   "part": "D",
+   "fields": {
+    "Sim.Library": "diode.mod",
+    "Sim.Name": "1N4148",
+    "Sim.Pins": "1=K 2=A",
+    "Sim.Device": "D"
+   }
+  },
+  {
+   "ref": "R1",
+   "value": "1k",
+   "lib": "rectifier_schlib",
+   "part": "R",
+   "fields": {
+    "Sim.Pins": "1=1 2=2"
+   }
+  },
+  {
+   "ref": "R2",
+   "value": "100k",
+   "lib": "rectifier_schlib",
+   "part": "R",
+   "fields": {
+    "Sim.Pins": "1=1 2=2"
+   }
+  },
+  {
+   "ref": "V1",
+   "value": "dc=0 ampl=1 f=1k ac=1",
+   "lib": "rectifier_schlib",
+   "part": "VSIN",
+   "fields": {
+    "Sim.Device": "V",
+    "Sim.Params": "dc=0 ampl=1 f=1k ac=1",
+    "Sim.Pins": "1=+ 2=-",
+    "Sim.Type": "SIN"
+   }
+  }
+ ],
+ "nets": [
+  {
+   "name": "/rect_out",
+   "nodes": [
+    {
+     "ref": "C1",
+     "pin": "1",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "D1",
+     "pin": "1",
+     "function": "K_1",
+     "type": "passive"
+    },
+    {
+     "ref": "R2",
+     "pin": "1",
+     "function": null,
+     "type": "passive"
+    }
+   ]
+  },
+  {
+   "name": "/signal_in",
+   "nodes": [
+    {
+     "ref": "R1",
+     "pin": "1",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "V1",
+     "pin": "1",
+     "function": null,
+     "type": "passive"
+    }
+   ]
+  },
+  {
+   "name": "GND",
+   "nodes": [
+    {
+     "ref": "C1",
+     "pin": "2",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "R2",
+     "pin": "2",
+     "function": null,
+     "type": "passive"
+    },
+    {
+     "ref": "V1",
+     "pin": "2",
+     "function": null,
+     "type": "passive"
+    }
+   ]
+  },
+  {
+   "name": "Net-(D1-A)",
+   "nodes": [
+    {
+     "ref": "D1",
+     "pin": "2",
+     "function": "A_2",
+     "type": "passive"
+    },
+    {
+     "ref": "R1",
+     "pin": "2",
+     "function": null,
+     "type": "passive"
+    }
+   ]
+  }
+ ],
+ "source": "KiCad demos/simulation/rectifier/rectifier.kicad_sch @ 4b68fa789b38"
+}

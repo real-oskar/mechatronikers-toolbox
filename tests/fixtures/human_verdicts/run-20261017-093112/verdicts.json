@@ -1,0 +1,91 @@
+{
+  "run_id": "run-20261017-093112",
+  "reviewer": "Luca Schwarz (@Backverbot)",
+  "reviewed_at": "2026-10-17",
+  "source": "branch 5-validation-of-3d-model, commit aefc822, tests/model_validation_results.txt (reasons); models from commit 23ff937, data/*/*_KI.ap242.step",
+  "labels": "good / poor / failed summarise the reasons, as listed in issue #93",
+  "verdicts": [
+    {
+      "part": "Befestigung",
+      "verdict": "poor",
+      "reasons": [
+        "Fataler Fehler, die obere Aussparung fehlt/wurde nicht extrahiert",
+        "Die Stützrippe fehlt, sie war nicht explizit bemaßt aber auf der Zeichnung gut sichtbar."
+      ],
+      "model": "Befestigung_KI.ap242.step"
+    },
+    {
+      "part": "Dreistern",
+      "verdict": "poor",
+      "reasons": [
+        "Eindeutiger Fehler, Slope Fehlt trotz Bemaßung. Slope macht einen großen teil der Geometrie aus"
+      ],
+      "model": "Dreistern_KI.ap242.step"
+    },
+    {
+      "part": "Flansch",
+      "verdict": "good",
+      "reasons": [
+        "Keine sichtbaren unterschiede",
+        "Keine Messbaren unterschiede (Boolsche Subtraktion nicht ausführbar)"
+      ],
+      "model": "Flansch_KI.ap242.step"
+    },
+    {
+      "part": "Fuss",
+      "verdict": "good",
+      "reasons": [
+        "Einwandfreie Datei. Quasi 100% Übereinstimmung"
+      ],
+      "model": "Fuss_KI.ap242.step"
+    },
+    {
+      "part": "Haken",
+      "verdict": "poor",
+      "reasons": [
+        "Eine Rundung ist 10 statt 5mm extrahiert",
+        "Originalteil extrahiert die Geometrie 5mm nach oben und 5mm nach unten —>Oberfläche und Volumen bleiben gleich",
+        "Problem: Zeichnung definiert keine Abstände, sie setzt eine Symmetrie voraus die nirgends definiert wurde."
+      ],
+      "model": "Haken_KI.ap242.step"
+    },
+    {
+      "part": "Maschinenteil",
+      "verdict": "failed",
+      "reasons": [
+        "Wurde nicht gerendert"
+      ],
+      "model": null
+    },
+    {
+      "part": "Rotation",
+      "verdict": "poor",
+      "reasons": [
+        "Geringe Differenz rund um den Graben",
+        "Eine Phase ist nicht groß genug —> In Zeichnung nicht definiert, also kein Fehler",
+        "Ein Filling wurde in der Zeichnung mit R6 definiert und fehlt komplett —> Kritischer Fehler"
+      ],
+      "model": "Rotation_KI.ap242.step"
+    },
+    {
+      "part": "Traegerplatte",
+      "verdict": "good",
+      "reasons": [
+        "Perfekt nachgebildet, quasi keine Differenz"
+      ],
+      "model": "Traegerplatte_KI.ap242.step"
+    },
+    {
+      "part": "Welle",
+      "verdict": "good",
+      "note": "minor",
+      "reasons": [
+        "Hohe Übereinstimmung",
+        "Differenz an 3 ringen",
+        "2 davon fehlende Chamfers, die in der Zeichnung nicht definiert waren",
+        "1 davon ein Radius, der vermutlich an der Flaschen kante angesetzt wurde. Nicht kritisch aber auch nicht unbedenklich"
+      ],
+      "model": "Welle_KI.ap242.step"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "autodeskProduct": "Fusion",
+  "type": "addin",
+  "id": "6f2d3c1a-8b47-4e59-9a1c-3d5e7b9f0a12",
+  "author": "BFH Oktober 2026 Team Mechatronikers",
+  "description": {
+    "": "Schnittstelle zwischen Fusion 360 und Drawing2CAD um eine technische Zeichnung (PDF) in eine STEP zu importieren."
+  },
+  "version": "1.0.0",
+  "runOnStartup": true,
+  "supportedOS": "windows|mac",
+  "editEnabled": true,
+  "iconFilename": "/resources/64x64.png"
+}
